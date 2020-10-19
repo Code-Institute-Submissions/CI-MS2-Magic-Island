@@ -1,12 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
 /*--------------- GENERAL ---------------*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 /*----------------- NAVIGATION BAR -------------------*/
 
+nav {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  color: #5171a5;
+  background: linear-gradient(to right, #de8435 0%, #f0b143 100%);
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  padding-left: 25px;
+}
+
+.sun {
+    height: 50px;
+  width: 50px;
+  border-radius: 50%;
+    background: #FFCF47;
+background: -webkit-radial-gradient(center, #FFEF47, #DE8435);
+background: -moz-radial-gradient(center, #FFEF47, #DE8435);
+background: radial-gradient(ellipse at center, #FFEF47, #DE8435);
+}
+
+/* .logo img {
+  height: 50px;
+  width: 50px;
+} */
+
+.logo h3 {
+  align-self: center;
+  padding-left: 15px;
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  font-weight: 500;
+  margin-right: 15%;
+  z-index: 1;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5171a5;
+}
+
+.burguer {
+  display: none;
+}
+
+.burguer div {
+  width: 25px;
+  height: 3px;
+  background-color: #5171a5;
+  margin: 5px;
+}
+
+section {
+    min-height: 100vh
+    }
+}
 /*------------------ INTRO SECTION -------------------*/
 
 /*------------------ ABOUT SECTION -------------------*/
