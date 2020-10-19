@@ -1,43 +1,204 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Magica Island]
 
-Welcome USER_NAME,
+#ADD MOCKUP
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Table of Contents:
 
-## Gitpod Reminders
+- [User Experience](#user-experience)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+  - [Strategy](#1-strategy)
+  - [Scope](#2-scope)
+  - [Structure](#3-structure)
+  - [Skeleton](#4-skeleton)
+  - [Surface](#5-surface)
 
-`python3 -m http.server`
+- [Features](#features)
 
-A blue button should appear to click: *Make Public*,
+  - [Existing Features](#existing-features)
+  - [Features Left to Implement When Skills Develop](#features-left-to-implement-when-skills-develop)
 
-Another blue button should appear to click: *Open Browser*.
+- [Technologies Used](#technologies-used)
+  - [Languages](#1-languages)
+  - [Integrations](#2-integrations)
+  - [Workspace, Version Control, and Repository Storage](#3-workspace-version-control-and-repository-storage)
+- [Resources](#resources)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [Testing](#testing)
 
-A blue button should appear to click: *Make Public*,
+- [Deployment](#deployment)
 
-Another blue button should appear to click: *Open Browser*.
+- [Credits](#credits)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+  - [Content](#content)
+  - [Media](#media)
+  - [Code](#code)
 
-## Updates Since The Instructional Video
+- [Acknowledgments](#acknowledgments)
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+## User Experience
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### 1. Strategy
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Project Goals:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+*
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+\*
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Customer Goals:
 
---------
+-
 
-Happy coding!
+*
+
+-
+
+### 2. Scope
+
+\*
+
+\*
+
+\*
+
+\*
+
+\*
+
+### 3. Structure
+
+### 4. Skeleton
+
+- Wireframes
+
+-
+
+\*
+
+\*
+
+### 5. Surface
+
+**Colors**:
+
+**Typography**:
+
+**Images**:
+
+## Features
+
+### Existing Features
+
+- Designed with HTML5, CSS3, JavaScript and Gsap.
+
+-
+
+\*
+
+\*
+
+## Technologies Used
+
+### 1. Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - Used to create the form and add content to the website.
+
+- [CSS](https://en.wikipedia.org/wiki/CSS) - Used to style the HTML5 elements.
+
+### 2. Integrations
+
+- [Google Fonts](https://fonts.google.com/) - Typography.
+
+- [FontAwesome](https://fontawesome.com/) - Used for icons.
+
+### 3. Workspace, version control, and repository storage
+
+- [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used to write the code.
+
+- [GitHub](https://github.com/) - Repository hosting service to host the deployed website and track previous versions of code.
+
+- [Git](https://git-scm.com/) - Version control tool to record changes and updates to my files.
+
+## Resources
+
+[W3.CSS](https://www.w3schools.com/w3css/defaulT.asp) - General resource.
+
+[Stack Overflow](https://pt.stackoverflow.com/) - General resource.
+
+[Youtube](https://www.youtube.com/) - General resource.
+
+[Deep Image](https://deep-image.ai/) - Enhance image.
+
+[CSS Matic](https://www.cssmatic.com) - Box Shadow Genetator.
+
+[CSS Gradient](https://cssgradient.io/) - Gradient Generator
+
+[CommonMark](https://commonmark.org/) - For Markdown language reference.
+
+[Coolors](https://coolors.co/) - Find matching color palette for site.
+
+[TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
+
+[Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
+
+Code Institute SLACK Community - General Resource
+
+## Testing
+
+- [W3C Markup Validation](https://validator.w3.org/) - Used for validity HTML
+
+- [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used for validity CSS
+
+-
+
+\*
+
+\*
+
+\*
+
+\*
+
+\*
+
+\*
+
+\*
+
+\*
+
+## Deployment
+
+This project has been deployed on GitHub Pages with the following process:
+
+1. All code was written on Gitpod, an online IDE.
+
+2. The code was then pushed to GitHub where it is stored in my Repository.
+
+3. Under the settings section of the GitHub repository, scroll down to the GitHub Pages section.
+
+4. Under 'Source' drop-down, the 'Master branch' was selected.
+
+5. Once selected, this publishes the project to GitHub Pages and displays the site URL.
+
+6. There is no difference between the deployed version and the development version.
+
+7. The code can be run locally through clone or download.
+
+8. You can do this by opening the repository, clicking on the green 'Code' button, and selecting either 'clone or download'.
+
+9. The Clone option provides a URL, which you can use on your desktop IDE.
+
+10. The Download ZIP option provides a link to download a ZIP file that can be unzipped on your local machine.
+
+## Credits
+
+### Content
+
+### Media
+
+### Code
+
+## Acknowledgments
