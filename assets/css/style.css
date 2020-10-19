@@ -11,6 +11,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
 /*----------------- NAVIGATION BAR -------------------*/
 
@@ -32,13 +33,13 @@ nav {
 }
 
 .sun {
-    height: 50px;
+  height: 50px;
   width: 50px;
   border-radius: 50%;
-    background: #FFCF47;
-background: -webkit-radial-gradient(center, #FFEF47, #DE8435);
-background: -moz-radial-gradient(center, #FFEF47, #DE8435);
-background: radial-gradient(ellipse at center, #FFEF47, #DE8435);
+  background: #ffcf47;
+  background: -webkit-radial-gradient(center, #ffef47, #de8435);
+  background: -moz-radial-gradient(center, #ffef47, #de8435);
+  background: radial-gradient(ellipse at center, #ffef47, #de8435);
 }
 
 /* .logo img {
@@ -82,11 +83,39 @@ background: radial-gradient(ellipse at center, #FFEF47, #DE8435);
 }
 
 section {
-    min-height: 100vh
-    }
+  min-height: 100vh;
 }
+
 /*------------------ INTRO SECTION -------------------*/
 
+#intro {
+  background: url("../images/hero.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro-text {
+  max-width: 420px;
+  position: absolute;
+  left: 6%;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+.intro-text h2 {
+  color: #254c54;
+  font-size: 180%;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.intro-text p {
+  text-align: justify;
+  color: #254c54;
+  font-size: 0.8rem;
+  max-width: 80%;
+}
 /*------------------ ABOUT SECTION -------------------*/
 
 /*--------------- THINGS TO DO SECTION ---------------*/
