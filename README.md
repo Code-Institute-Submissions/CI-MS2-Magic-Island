@@ -1,6 +1,7 @@
 # Magica Island]
 
 #ADD MOCKUP
+The aim of this project is to show all the beauty a tourist will find if travelling to Mallorca. I kept the project simple provind information about beaches, places to eat and things to do. But it can be upgrade easily, and also would feasible have partners and section to book rooms, cars, etc..
 
 ## Table of Contents:
 
@@ -41,43 +42,44 @@
 
 Project Goals:
 
--
+- Provide information on holiday destination.
 
-*
+- Inspire people that are thinking to go on holiday with images and tips.
 
-\*
+- Increase the number of tourist in Mallorca.
 
 Customer Goals:
 
--
+- Get inspired for their next holiday destination.
 
-*
+- Find accurate information on different subjects
 
--
+- Have a way to make contact and clarify doubts.
 
 ### 2. Scope
 
-\*
-
-\*
-
-\*
-
-\*
-
-\*
+The Magic Island website is contained within a single webpage. Users do not have to navigate away to use all the elements included in the website. Elements of the homepage are interactive including buttons that show all the things that are possible to do in Mallorca. The website also has a Google Maps API to provide direction.
+There is also some JavaScript and GSAP animations to make the experience more user friendly.
 
 ### 3. Structure
 
+The main focus of the structure is to allow users to quickly understand what the website is about. With a navigation bar that represents a sunset, a hero image of a beach, and a small description on the main page is easy for a user to understand the site proposal.
+Users are invited to scroll down through a button and the next is nicely fade in in the screen with some general information and after some more specific information.
+To finish the website the user can send a message through a form in the case have any doubt.
+
 ### 4. Skeleton
+
+# ADD WIREFRAME
 
 - Wireframes
 
--
+- Fixed navigation bar(Burguer menu for small screens)
 
-\*
+- Home, About, Things to Do, and Contact pages
 
-\*
+* Footer with social media icons
+
+*
 
 ### 5. Surface
 
@@ -91,27 +93,45 @@ Customer Goals:
 
 ### Existing Features
 
-- Designed with HTML5, CSS3, JavaScript and Gsap.
+- Designed with HTML5, CSS3, JavaScript and GSAP.
 
--
+- Animation before load website showing what to expect.
 
-\*
+- Navigation Bar represeting a sunset.
 
-\*
+- About section nacely fade in with scroll.
+
+- Things to Do section with buttons showing different things to do, and also showing in the Google Maps API.
+
+- Scroll to top button - this feature enables the user to quickly move back to the top of the page
+
+- Footer with social midia links.
+
+### Features to consider implementing in the future
+
+- A partner section with a direct way to book rooms, cars.
+
+- Sign in a newsletter with the possibility to get discout vouchers in restaurants and attractions.
 
 ## Technologies Used
 
 ### 1. Languages
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5) - Used to create the form and add content to the website.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-- [CSS](https://en.wikipedia.org/wiki/CSS) - Used to style the HTML5 elements.
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### 2. Integrations
 
 - [Google Fonts](https://fonts.google.com/) - Typography.
 
 - [FontAwesome](https://fontawesome.com/) - Used for icons.
+
+- [GSAP](https://greensock.com/gsap/) - Animations Library.
+
+- [Google Maps API](https://cloud.google.com/maps-platform/) - Interative Maps API
 
 ### 3. Workspace, version control, and repository storage
 
