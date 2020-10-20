@@ -41,11 +41,6 @@ nav {
   background: radial-gradient(ellipse at center, #ffef47, #de8435);
 }
 
-/* .logo img {
-  height: 50px;
-  width: 50px;
-} */
-
 .logo h3 {
   align-self: center;
   padding-left: 15px;
@@ -81,10 +76,6 @@ nav {
   margin: 5px;
 }
 
-section {
-  min-height: 100vh;
-}
-
 /*------------------ INTRO SECTION -------------------*/
 
 #intro {
@@ -107,22 +98,17 @@ section {
   letter-spacing: 3px;
   padding: 0 10px;
 }
-/* 
-.intro-text p {
-  text-align: justify;
-  color: #254c54;
-  font-size: 0.9rem;
 
-  padding: 0 10px;
-} */
 /*------------------ ABOUT SECTION -------------------*/
-.about-container {
-  display: flex;
+.container-about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 70vh;
 }
 
-.about-container img {
-  max-height: 70vh;
-  min-width: 66.6vw;
+.container-about img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: bottom;
 }
@@ -140,7 +126,64 @@ section {
   font-size: 2.8rem;
 }
 /*--------------- THINGS TO DO SECTION ---------------*/
+.container-things-to-do {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 
+.container-btns {
+  display: flex;
+}
+
+.place-option {
+  margin-left: 0 auto;
+}
+
+.places {
+  margin: 10px;
+}
+
+.btn {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 140px;
+  width: 140px;
+  box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1);
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn-beach {
+  background: url("../images/beach.png") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 12px solid #de8435;
+}
+
+.btn-restaurtant {
+  background: url("../images/tapas.png") no-repeat center;
+  background-size: cover;
+  border: 12px solid #ffcf47;
+}
+
+.btn-activities {
+  background: url("../images/sup.png") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 12px solid #254c54;
+}
+
+.places h3 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.container-tips-map {
+  background: #fafa9a;
+}
 /*---------------------- CONTACT ---------------------*/
 
 /*---------------------- FOOTER ----------------------*/

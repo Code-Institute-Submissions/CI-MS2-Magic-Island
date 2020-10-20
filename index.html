@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Magic Island</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/favicon.png"
-    />
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <nav>
-      <div class="logo">
-        <!-- <img id="logo-img" src="assets/images/sun1.png" alt="Logo" /> -->
-        <div class="sun"></div>
-        <h3>Magic Island</h3>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Things</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="burguer">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<title>Magic Island</title>
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+</head>
 
-    <!-- INTRO SECTION -->
-    <section id="intro">
-      <div class="intro-text">
-        <h1>Welcome to Mallorca!</h1>
-        <!-- <p>One of the most popular destinations on Earth. Mallorca has everything you need, astonishing beaches,
-				tasty
-				food, exciting activities, and much more. Scroll down and give the first step to make your dream come
-				true.
-			</p> -->
-      </div>
-    </section>
+<body>
+	<!-- NAVIGATION BAR -->
+	<nav>
+		<div class="logo">
+			<!-- <img id="logo-img" src="assets/images/sun1.png" alt="Logo" /> -->
+			<div class="sun"></div>
+			<h3>Magic Island</h3>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#thing-to-do">Things</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<div class="burguer">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
 
-    <!-- ABOUT SECTION -->
+	<!-- INTRO SECTION -->
+	<section id="intro">
+		<div class="intro-text">
+			<h1>Welcome to Mallorca!</h1>
+		</div>
+	</section>
 
-    <section id="about">
-      <div class="about-container">
-        <img
+	<!-- ABOUT SECTION -->
+
+	<section id="about">
+		<div class="container-about">
+			<img
           src="assets/images/village.png"
           alt="A street from Valldemossa, an old town style village"
         />
-        <div id="about-text">
-          <p>
-            One of the most beaufitul destination on Earth. Mallorca has
-            everything you need, astonishing beaches, tasty food, and much more.
-          </p>
-          <p>We are here to help you find whatever you need!</p>
-        </div>
-      </div>
-    </section>
+			<div id="about-text">
+				<p>
+					One of the most beaufitul destination on Earth. Mallorca has
+					everything you need, astonishing beaches, tasty food, and much more.
+				</p>
+				<p>We are here to help you find whatever you need!</p>
+			</div>
+		</div>
+	</section>
 
-    <!-- THINGS TO DO SECTION -->
+	<!-- THINGS TO DO SECTION -->
 
-    <section id="thinkAbout">things to do</section>
+	<section id="thing-to-do">
+		<div class="container-things-to-do">
+			<div class="container-btns">
+				<div class="place-option">
+					<div class="places beach">
+						<button class="btn btn-beach"></button>
+						<h3>Beaches</h3>
+					</div>
+					<div class="places restaurtant">
+						<button class="btn btn-restaurtant"></button>
+						<h3>Restaurants</h3>
+					</div>
+					<div class="places activities">
+						<button class="btn btn-activities"></button>
+						<h3>Activities</h3>
+					</div>
+				</div>
+				<div class="choices-btn">
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+				</div>
+			</div>
+			<div class="container-tips-map">
+			</div>
+		</div>
 
-    <!-- CONTACT SECTION -->
 
-    <section id="contact">contact</section>
+	</section>
 
-    <!-- FOOTER -->
-    <footer>footer</footer>
+	<!-- CONTACT SECTION -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/map.js"></script>
-  </body>
+	<section id="contact">contact</section>
+
+	<!-- FOOTER -->
+	<footer>footer</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
+	<script src="assets/js/map.js"></script>
+</body>
+
 </html>
