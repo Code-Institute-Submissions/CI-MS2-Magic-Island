@@ -94,18 +94,19 @@ nav {
 }
 
 .intro-text h1 {
+  text-align: center;
   color: #254c54;
   font-size: 250%;
   font-weight: 500;
   letter-spacing: 3px;
+  line-height: 2rem;
   padding: 0 10px;
 }
 
 /*------------------ ABOUT SECTION -------------------*/
 .container-about {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 70vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container-about img {
@@ -121,7 +122,9 @@ nav {
   text-align: center;
   display: grid;
   justify-content: center;
-  align-items: center;
+  min-height: 400px;
+  align-content: center;
+  padding: 5%;
 }
 
 #about-text p {
@@ -286,4 +289,17 @@ nav {
   .information-img img {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 992px) {
+  .container-about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 70vh;
+  }
+  /*----------------------------------------------------Have a look in the font size in diferent screen sizes*/
+  /* #about-text p {
+    font-size: 2.2rem;
+    font-family: "Montserrat";
+  } */
 }
