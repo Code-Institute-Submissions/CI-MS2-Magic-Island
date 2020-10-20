@@ -1,7 +1,7 @@
-# Magica Island]
+# Magic Island
 
 #ADD MOCKUP
-The aim of this project is to show all the beauty a tourist will find if travelling to Mallorca. I kept the project simple provind information about beaches, places to eat and things to do. But it can be upgrade easily, and also would feasible have partners and section to book rooms, cars, etc..
+The aim of this project is to show all the beauty a tourist will find if traveling to Mallorca. I kept the project simple providing information about beaches, places to eat, and things to do. But it can be upgraded easily, and also would feasible have partners and section to book rooms, cars, etc..
 
 ## Table of Contents:
 
@@ -42,11 +42,11 @@ The aim of this project is to show all the beauty a tourist will find if travell
 
 Project Goals:
 
-- Provide information on holiday destination.
+- Provide information on holiday destinations.
 
 - Inspire people that are thinking to go on holiday with images and tips.
 
-- Increase the number of tourist in Mallorca.
+- Increase the number of tourists in Mallorca.
 
 Customer Goals:
 
@@ -97,21 +97,23 @@ To finish the website the user can send a message through a form in the case hav
 
 - Animation before load website showing what to expect.
 
-- Navigation Bar represeting a sunset.
+- Navigation Bar representing a sunset.
 
-- About section nacely fade in with scroll.
+- About section nicely fade in with scroll.
 
 - Things to Do section with buttons showing different things to do, and also showing in the Google Maps API.
 
+- Pop up Modal when submitting the form with thank you messages
+
 - Scroll to top button - this feature enables the user to quickly move back to the top of the page
 
-- Footer with social midia links.
+- Footer with social media links.
 
 ### Features to consider implementing in the future
 
 - A partner section with a direct way to book rooms, cars.
 
-- Sign in a newsletter with the possibility to get discout vouchers in restaurants and attractions.
+- Sign in for a newsletter with the possibility to get discount vouchers in restaurants and attractions.
 
 ## Technologies Used
 
@@ -131,7 +133,9 @@ To finish the website the user can send a message through a form in the case hav
 
 - [GSAP](https://greensock.com/gsap/) - Animations Library.
 
-- [Google Maps API](https://cloud.google.com/maps-platform/) - Interative Maps API
+- [Google Maps JavaScript API](https://cloud.google.com/maps-platform/) - Interative Maps API.
+
+- [EmailJS API](https://www.emailjs.com/) - Send Emails directly with JavaScript.
 
 ### 3. Workspace, version control, and repository storage
 
