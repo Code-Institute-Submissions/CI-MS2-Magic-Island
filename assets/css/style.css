@@ -138,7 +138,11 @@ nav {
   align-content: center;
 }
 
-.place-option {
+.place-option,
+.choices {
+  display: grid;
+  height: fit-content;
+  align-self: center;
 }
 
 .places {
@@ -186,12 +190,6 @@ nav {
   font-size: 1.7rem;
 }
 
-.choices {
-  display: grid;
-  height: fit-content;
-  align-self: center;
-}
-
 .choices-btn {
   height: 40px;
   width: 175px;
@@ -211,6 +209,31 @@ nav {
 
 .container-tips-map {
   background: #254c54;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.information {
+  max-width: 350px;
+}
+
+.information-img {
+  max-width: 350px;
+}
+
+.information-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 15px solid #db8d3f;
+}
+
+#map {
+  width: 400px;
+  height: 400px;
+  background: #db8d3f;
 }
 /*---------------------- CONTACT ---------------------*/
 
