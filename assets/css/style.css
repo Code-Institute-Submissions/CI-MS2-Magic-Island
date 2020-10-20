@@ -132,18 +132,20 @@ nav {
 }
 
 .container-btns {
+  background: #eaeaea;
   display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 .place-option {
-  margin-left: 0 auto;
 }
 
 .places {
   margin: 10px;
 }
 
-.btn {
+.btn-places {
   border-radius: 50%;
   cursor: pointer;
   height: 140px;
@@ -152,7 +154,8 @@ nav {
   outline: none;
 }
 
-.btn:active {
+.btn-places:active,
+.choices-btn:active {
   transform: scale(0.9);
 }
 
@@ -179,10 +182,35 @@ nav {
 .places h3 {
   text-align: center;
   margin-top: 5px;
+  font-family: monospace;
+  font-size: 1.7rem;
+}
+
+.choices {
+  display: grid;
+  height: fit-content;
+  align-self: center;
+}
+
+.choices-btn {
+  height: 40px;
+  width: 175px;
+  background: #254c54;
+  color: #de8435;
+  font-family: monospace;
+  font-weight: 600;
+  margin: 10px 0;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.choices-btn:focus {
+  outline: 3px auto #de8435;
 }
 
 .container-tips-map {
-  background: #fafa9a;
+  background: #254c54;
 }
 /*---------------------- CONTACT ---------------------*/
 
