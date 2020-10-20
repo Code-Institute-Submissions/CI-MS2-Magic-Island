@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 /*--------------- GENERAL ---------------*/
 
 * {
@@ -10,8 +9,8 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
 }
 /*----------------- NAVIGATION BAR -------------------*/
 
@@ -95,29 +94,51 @@ section {
 }
 
 .intro-text {
-  max-width: 420px;
   position: absolute;
-  left: 6%;
-  top: 20%;
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 10px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
 }
 
-.intro-text h2 {
+.intro-text h1 {
   color: #254c54;
-  font-size: 180%;
+  font-size: 250%;
   font-weight: 500;
   letter-spacing: 3px;
+  padding: 0 10px;
 }
-
+/* 
 .intro-text p {
   text-align: justify;
   color: #254c54;
-  font-size: 0.8rem;
-  max-width: 80%;
-}
-/*------------------ ABOUT SECTION -------------------*/
+  font-size: 0.9rem;
 
+  padding: 0 10px;
+} */
+/*------------------ ABOUT SECTION -------------------*/
+.about-container {
+  display: flex;
+}
+
+.about-container img {
+  max-height: 70vh;
+  min-width: 66.6vw;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#about-text {
+  background: #db8d3f;
+  color: #132225;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-text p {
+  font-size: 2.8rem;
+}
 /*--------------- THINGS TO DO SECTION ---------------*/
 
 /*---------------------- CONTACT ---------------------*/
