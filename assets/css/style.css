@@ -27,6 +27,7 @@ nav {
   max-height: 60px;
   color: #db8d3f;
   background: #254c54;
+  z-index: 1;
 }
 
 .logo {
@@ -35,6 +36,12 @@ nav {
   letter-spacing: 3px;
   font-weight: 300;
   padding-left: 25px;
+}
+
+.logo a {
+  text-decoration: none;
+  display: flex;
+  color: #db8d3f;
 }
 
 .logo img {
@@ -64,6 +71,12 @@ nav {
   color: #db8d3f;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.1rem;
+  transition-duration: 0.5s;
+}
+
+.nav-links a:hover,
+.logo a:hover {
+  color: #c76c12;
 }
 
 .burguer {
@@ -79,7 +92,7 @@ nav {
 
 /*------------------ INTRO SECTION -------------------*/
 
-#intro {
+#hero {
   background: url("../images/hero.png");
   background-size: cover;
   background-position-y: top;
@@ -87,14 +100,14 @@ nav {
   height: 100vh;
 }
 
-.intro-text {
+.hero-text {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -25%);
 }
 
-.intro-text h1 {
+.hero-text h1 {
   text-align: center;
   color: #254c54;
   font-size: 350%;
@@ -442,11 +455,11 @@ footer {
     z-index: 1;
   }
 
-  .intro-text {
+  .hero-text {
     transform: translate(-50%, -85%);
   }
 
-  .intro-text h1 {
+  .hero-text h1 {
     font-size: 300%;
   }
 
