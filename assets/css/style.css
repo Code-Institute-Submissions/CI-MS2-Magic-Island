@@ -83,7 +83,8 @@ nav {
 #intro {
   background: url("../images/hero.png");
   background-size: cover;
-  background-position: center;
+  background-position-y: top;
+  background-position-x: center;
   height: 100vh;
 }
 
@@ -307,6 +308,34 @@ nav {
   outline: none;
 }
 /*---------------------- FOOTER ----------------------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #254c54;
+  height: 10vh;
+  max-height: 60px;
+}
+
+.container-footer ul {
+  display: flex;
+}
+
+.container-footer li {
+  list-style-type: none;
+  margin: 0 40px;
+}
+
+.container-footer i {
+  color: #fafafa;
+  font-size: 1.8rem;
+  transition: transform 0.5s;
+}
+
+.container-footer i:hover {
+  transform: scale(1.2);
+  color: #db8d3f;
+}
 
 /*------------------- MEDIA QUERIES ------------------*/
 
