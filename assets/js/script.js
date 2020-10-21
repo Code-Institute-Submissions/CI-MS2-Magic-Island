@@ -9,10 +9,10 @@ const navSlide = () => {
 
 navSlide();
 
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.from(".sun", {
-  x: "-110vw",
-  background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
-  duration: 25,
-});
+// tl.from(".sun", {
+//   x: "-110vw",
+//   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
+//   duration: 25,
+// });
