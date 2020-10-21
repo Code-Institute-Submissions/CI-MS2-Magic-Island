@@ -323,6 +323,48 @@ nav {
   outline: none;
 }
 
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.intro img {
+  width: 800px;
+  height: 800px;
+}
+
+.intro h2 {
+  font-size: 200%;
+  color: white;
+}
+
+.intro-beach {
+  transform: translateX(100%);
+}
+
+.intro-activities {
+  transform: translatex(-100%);
+}
+
+.slider {
+  background: rgb(204, 171, 110);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 5;
+}
+
 /*---------------------- FOOTER ----------------------*/
 
 footer {
