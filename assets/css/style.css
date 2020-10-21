@@ -15,17 +15,14 @@ h4 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-body {
-  overflow: hidden;
-}
 /*----------------- NAVIGATION BAR -------------------*/
 
 nav {
   display: flex;
   align-items: center;
   height: 7vh;
-  color: #5171a5;
-  background: linear-gradient(to right, #de8435 0%, #f0b143 100%);
+  color: #db8d3f;
+  background: #254c54;
   justify-content: space-between;
 }
 
@@ -37,14 +34,9 @@ nav {
   padding-left: 25px;
 }
 
-.sun {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #ffcf47;
-  background: -webkit-radial-gradient(center, #ffef47, #de8435);
-  background: -moz-radial-gradient(center, #ffef47, #de8435);
-  background: radial-gradient(ellipse at center, #ffef47, #de8435);
+.logo img {
+  height: 55px;
+  width: 55px;
 }
 
 .logo h3 {
@@ -68,7 +60,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #5171a5;
+  color: #db8d3f;
 }
 
 .burguer {
@@ -316,13 +308,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #254c54;
+  background: linear-gradient(to left, #de8435 0%, #f0b143 100%);
   height: 10vh;
   max-height: 60px;
 }
 
 .container-footer ul {
   display: flex;
+  z-index: 1;
 }
 
 .container-footer li {
@@ -339,6 +332,18 @@ footer {
 .container-footer i:hover {
   transform: scale(1.2);
   color: #db8d3f;
+}
+
+.sun {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ffcf47;
+  background: -webkit-radial-gradient(center, #ffef47, #de8435);
+  background: -moz-radial-gradient(center, #ffef47, #de8435);
+  background: radial-gradient(ellipse at center, #ffef47, #de8435);
+  position: absolute;
+  right: 10px;
 }
 
 /*------------------- MEDIA QUERIES ------------------*/
