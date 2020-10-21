@@ -337,9 +337,24 @@ footer {
   transition: transform 0.5s;
 }
 
-.container-footer i:hover {
+.container-footer .fa-facebook:hover {
   transform: scale(1.2);
-  color: #254c54;
+  color: #036ae3;
+}
+
+.container-footer .fa-instagram:hover {
+  transform: scale(1.2);
+  color: #f56a40;
+}
+
+.container-footer .fa-twitter:hover {
+  transform: scale(1.2);
+  color: #1da1f2;
+}
+
+.container-footer .fa-youtube:hover {
+  transform: scale(1.2);
+  color: #f00;
 }
 
 .sun {
