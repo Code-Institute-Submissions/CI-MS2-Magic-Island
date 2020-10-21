@@ -89,19 +89,19 @@ nav {
 
 .intro-text {
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -35%);
+  transform: translate(-50%, -25%);
 }
 
 .intro-text h1 {
   text-align: center;
   color: #254c54;
-  font-size: 250%;
+  font-size: 350%;
   font-weight: 500;
   letter-spacing: 3px;
-  line-height: 2rem;
-  padding: 0 10px;
+  line-height: 3rem;
+  min-width: 310px;
 }
 
 /*------------------ ABOUT SECTION -------------------*/
@@ -150,7 +150,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -241,6 +240,8 @@ nav {
 
 .information-img {
   max-width: 350px;
+  display: flex;
+  justify-content: center;
 }
 
 .information-img img {
@@ -256,7 +257,9 @@ nav {
   height: 400px;
   background: #db8d3f;
 }
+
 /*---------------------- CONTACT ---------------------*/
+
 .container-contact {
   background: url("../images/sunshine.png");
   background-size: cover;
@@ -306,7 +309,9 @@ nav {
   border: none;
   outline: none;
 }
+
 /*---------------------- FOOTER ----------------------*/
+
 footer {
   display: flex;
   align-items: center;
@@ -334,7 +339,7 @@ footer {
 
 .container-footer i:hover {
   transform: scale(1.2);
-  color: #db8d3f;
+  color: #254c54;
 }
 
 .sun {
@@ -363,6 +368,7 @@ footer {
 
   .place-option,
   .choices {
+    width: 70%;
     display: grid;
     height: fit-content;
     align-self: center;
@@ -398,7 +404,7 @@ footer {
   body {
     overflow-x: hidden;
   }
-
+  /*----------------- NAVIGATION BAR -------------------*/
   .nav-links {
     position: absolute;
     right: 0px;
@@ -419,6 +425,45 @@ footer {
     margin-right: 10px;
     cursor: pointer;
     z-index: 1;
+  }
+
+  .intro-text {
+    transform: translate(-50%, -85%);
+  }
+
+  .intro-text h1 {
+    font-size: 300%;
+  }
+
+  /*--------------- THINGS TO DO SECTION ---------------*/
+  .information-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /*---------------------- CONTACT ---------------------*/
+
+  .container-form {
+    width: 95%;
+  }
+
+  #contactForm {
+    width: 80%;
+  }
+
+  /*----------------------- FOOTER -----------------------*/
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sun {
+    display: none;
+  }
+
+  .container-footer li {
+    margin: 0 20px;
   }
 }
 
