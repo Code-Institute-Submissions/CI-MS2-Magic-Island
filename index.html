@@ -30,7 +30,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#thing-to-do">Things</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="burguer">
         <div class="line1"></div>
@@ -118,7 +118,53 @@
 
     <!-- CONTACT SECTION -->
 
-    <section id="contact">contact</section>
+    <section id="contact">
+      <div class="container-contact">
+        <div class="container-form">
+          <form id="contactForm" onsubmit="return sendMail(this);">
+            <label for="fname">First Name:</label>
+            <input
+              class="text-input"
+              id="fname"
+              name="fname"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+            <label for="lname">Last Name:</label>
+            <input
+              class="text-input"
+              id="lname"
+              name="lname"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+            <label for="email">Email Address:</label>
+            <input
+              class="text-input"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="First Name"
+              required
+            />
+
+            <textarea
+              class="text-input"
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              minlength="50"
+              required
+            ></textarea>
+
+            <input id="btn-form" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>footer</footer>

@@ -83,6 +83,7 @@ nav {
 #intro {
   background: url("../images/hero.png");
   background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 
@@ -256,7 +257,55 @@ nav {
   background: #db8d3f;
 }
 /*---------------------- CONTACT ---------------------*/
+.container-contact {
+  background: url("../images/sunshine.png");
+  background-size: cover;
+  background-position: center;
 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-form {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  height: 70%;
+  width: 40%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactForm {
+  width: 70%;
+  color: #de8435;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text-input {
+  width: 100%;
+  padding: 5px 0 5px 5px;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#btn-form {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #db8d3f;
+  color: #254c54;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+}
 /*---------------------- FOOTER ----------------------*/
 
 /*------------------- MEDIA QUERIES ------------------*/
