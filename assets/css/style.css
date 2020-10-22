@@ -117,6 +117,69 @@ nav {
   min-width: 310px;
 }
 
+.intro {
+  background: rgb(204, 49, 49);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.container-images-intro {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.intro img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.intro h2 {
+  font-size: 400%;
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.intro-food {
+  background: #9e2f21;
+}
+
+.intro-beach {
+  background: #254c54;
+  transform: translateX(100%);
+}
+
+.intro-activities {
+  background: #db8d3f;
+  transform: translatex(-100%);
+}
+
+.intro-activities img {
+  object-position: center;
+}
+
+.slider {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 5;
+}
+
 /*------------------ ABOUT SECTION -------------------*/
 .container-about {
   display: flex;
@@ -321,48 +384,6 @@ nav {
   border-radius: 24px;
   border: none;
   outline: none;
-}
-
-.intro {
-  background: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
-.intro img {
-  width: 800px;
-  height: 800px;
-}
-
-.intro h2 {
-  font-size: 200%;
-  color: white;
-}
-
-.intro-beach {
-  transform: translateX(100%);
-}
-
-.intro-activities {
-  transform: translatex(-100%);
-}
-
-.slider {
-  background: rgb(204, 171, 110);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  z-index: 5;
 }
 
 /*---------------------- FOOTER ----------------------*/
