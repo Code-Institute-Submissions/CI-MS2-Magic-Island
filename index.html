@@ -16,6 +16,16 @@
       type="image/png"
       href="assets/images/favicon.png"
     />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_n27qJAh0791phWWb5Bl22");
+      })();
+    </script>
   </head>
 
   <body>
@@ -182,7 +192,7 @@
               id="message"
               rows="5"
               placeholder="Your Message"
-              minlength="50"
+              minlength="5"
               required
             ></textarea>
 
