@@ -8,6 +8,7 @@ function sendMail(contactForm) {
     })
     .then(
       function (response) {
+        startModal();
         refresh();
         console.log("SUCCESS", response);
       },
@@ -21,4 +22,18 @@ function sendMail(contactForm) {
 // Refresh the page when the form is submited
 function refresh() {
   document.getElementById("contactForm").reset();
+}
+
+// Modal PopUp
+
+function startModal() {
+  const modal = document.getElementById("modal-contact");
+
+  modal.classList.add("show-modal");
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == "modal-contact" || e.target.className == "close-modal") {
+      modal.classList.remove("show-modal");
+    }
+  });
 }
