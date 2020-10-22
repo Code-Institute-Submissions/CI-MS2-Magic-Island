@@ -137,10 +137,14 @@ nav {
 }
 
 .intro img {
-  width: 1000px;
+  width: 900px;
   height: 500px;
   object-fit: cover;
   object-position: bottom;
+}
+
+.img-vertical {
+  display: none;
 }
 
 .intro h2 {
@@ -148,6 +152,7 @@ nav {
   color: #f3f3f3;
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-top: 8%;
 }
 
@@ -157,7 +162,7 @@ nav {
 
 .intro-beach {
   background: #254c54;
-  transform: translateX(100%);
+  transform: translatex(100%);
 }
 
 .intro-activities {
@@ -411,7 +416,7 @@ nav {
   top: 0px;
   left: 0px;
   z-index: 10;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -533,6 +538,11 @@ footer {
 /*------------------- MEDIA QUERIES ------------------*/
 
 @media screen and (min-width: 1200px) {
+  .intro img {
+    width: 1100px;
+    height: 600px;
+  }
+
   .container-things-to-do {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -580,6 +590,22 @@ footer {
   body {
     overflow-x: hidden;
   }
+
+  /*----------------- INTRO ANIMATION -------------------*/
+
+  .intro img {
+    width: 500px;
+    height: 700px;
+  }
+
+  .img-vertical {
+    display: flex;
+  }
+
+  .img-horizontal {
+    display: none;
+  }
+
   /*----------------- NAVIGATION BAR -------------------*/
   .nav-links {
     position: absolute;
@@ -650,4 +676,27 @@ footer {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+@media screen and (max-width: 576px) {
+  .intro img {
+    width: 275px;
+    height: 450px;
+  }
+
+  .intro h2 {
+    font-size: 300%;
+    margin-top: 17%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .intro img {
+    width: 250px;
+    height: 375px;
+  }
+
+  .intro h2 {
+    font-size: 250%;
+  }
 }

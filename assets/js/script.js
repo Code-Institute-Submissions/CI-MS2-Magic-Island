@@ -20,13 +20,13 @@ const navSlide = () => {
 navSlide();
 
 //Animation when load the page
-// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-// tl.to(".intro-beach", { x: "0%", duration: 0.8, delay: 3 });
-// tl.to(".intro-activities", { x: "0%", duration: 0.8, delay: 2 });
-// tl.to(".slider", { y: "-100%", duration: 0.8, delay: 2 });
-// tl.to(".intro", { y: "-100%", duration: 0.8 }, "-=0.8");
-// tl.fromTo("nav, .hero-text", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.to(".intro-beach", { x: "0%", duration: 0.8, delay: 3 });
+tl.to(".intro-activities", { x: "0%", duration: 0.8, delay: 2 });
+tl.to(".slider", { y: "-100%", duration: 0.8, delay: 2 });
+tl.to(".intro", { y: "-100%", duration: 0.8 }, "-=0.8");
+tl.fromTo("nav, .hero-text", { opacity: 0 }, { opacity: 1, duration: 1 });
 
 //Animation in the footer moving a div from one to edge to another
 // const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
