@@ -8,11 +8,17 @@ function sendMail(contactForm) {
     })
     .then(
       function (response) {
+        refresh();
         console.log("SUCCESS", response);
       },
       function (error) {
-        console.log("FAILED", error);
+        alert("Sorry, it seems we have a problem. Please try again", error);
       }
     );
   return false;
+}
+
+// Refresh the page when the form is submited
+function refresh() {
+  document.getElementById("contactForm").reset();
 }
