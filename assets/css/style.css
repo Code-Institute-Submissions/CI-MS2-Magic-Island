@@ -251,20 +251,20 @@ nav {
   background: url("../images/beach.png") no-repeat center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 12px solid #de8435;
+  border: 12px solid #254c54;
 }
 
 .btn-restaurtant {
   background: url("../images/tapas.png") no-repeat center;
   background-size: cover;
-  border: 12px solid #ffcf47;
+  border: 12px solid #9e2f21;
 }
 
 .btn-activities {
   background: url("../images/sup.png") no-repeat center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 12px solid #254c54;
+  border: 12px solid #de8435;
 }
 
 .places h3 {
@@ -354,8 +354,16 @@ nav {
   width: 40%;
   max-width: 600px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  align-content: center;
+}
+
+.container-form h2 {
+  color: #eaeaea;
+  font-size: 3.5rem;
+  margin-bottom: 70px;
 }
 
 #contactForm {
@@ -382,8 +390,17 @@ nav {
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 24px;
-  border: none;
+  border: 2px solid #254c54;
   outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#btn-form:hover {
+  background: #254c54;
+  color: #db8d3f;
+  border: 2px solid #db8d3f;
+  transform: scale(1.05);
 }
 
 /*---------------------- FOOTER ----------------------*/
@@ -540,6 +557,11 @@ footer {
 
   #contactForm {
     width: 80%;
+  }
+
+  .container-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
   }
 
   /*----------------------- FOOTER -----------------------*/
