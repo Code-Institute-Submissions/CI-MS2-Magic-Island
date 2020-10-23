@@ -279,6 +279,17 @@ nav {
   font-size: 1.7rem;
 }
 
+.choices {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.choices.active {
+  display: flex;
+}
+
 .choices-btn {
   height: 40px;
   width: 175px;
@@ -566,6 +577,10 @@ footer {
     align-self: center;
   }
 
+  .choices {
+    display: none;
+  }
+
   .places {
     margin: 10px;
   }
@@ -645,7 +660,7 @@ footer {
   }
 
   /*--------------- THINGS TO DO SECTION ---------------*/
-  .information-img img {
+  .info-img img {
     width: 250px;
     height: 250px;
   }

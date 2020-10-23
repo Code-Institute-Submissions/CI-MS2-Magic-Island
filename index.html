@@ -132,27 +132,79 @@
         <div class="container-btns">
           <div class="place-option">
             <div class="places beach">
-              <button class="btn-places btn-beach"></button>
+              <button
+                class="btn-places btn-beach"
+                onclick="chooseCategorie('chose-beach')"
+              ></button>
               <h3>Beaches</h3>
             </div>
             <div class="places restaurtant">
-              <button class="btn-places btn-restaurtant"></button>
+              <button
+                class="btn-places btn-restaurtant"
+                onclick="chooseCategorie('chose-restaurant')"
+              ></button>
               <h3>Restaurants</h3>
             </div>
             <div class="places activities">
-              <button class="btn-places btn-activities"></button>
+              <button
+                class="btn-places btn-activities"
+                onclick="chooseCategorie('chose-activitie')"
+              ></button>
               <h3>Activities</h3>
             </div>
           </div>
-          <div class="choices">
-            <button class="choices-btn">Caló des Moro</button>
-            <button class="choices-btn">Playa de S'Amarador</button>
-            <button class="choices-btn">Cala Agulla</button>
-            <button class="choices-btn">Cala Santanyí</button>
+          <div id="chose-beach" class="choices">
+            <button
+              class="choices-btn"
+              onclick="choosePlace('chose-beach-img')"
+            >
+              Caló des Moro
+            </button>
+            <button
+              class="choices-btn"
+              onclick="choosePlace('chose-restaurant-img')"
+            >
+              Playa de S'Amarador
+            </button>
+            <button
+              class="choices-btn"
+              onclick="choosePlace('chose-activitie-img')"
+            >
+              Cala Agulla
+            </button>
+            <button class="choices-btn" onclick="choosePlace('')">
+              Cala Santanyí
+            </button>
+          </div>
+          <div id="chose-restaurant" class="choices">
+            <button class="choices-btn" onclick="choosePlace('')">
+              Restaurant L'Arcada
+            </button>
+            <button class="choices-btn" onclick="choosePlace('')">
+              Restaurant Mirador Na Foradada
+            </button>
+            <button class="choices-btn" onclick="choosePlace('')">Ombu</button>
+            <button class="choices-btn" onclick="choosePlace('')">
+              Bar España
+            </button>
+          </div>
+          <div id="chose-activitie" class="choices">
+            <button class="choices-btn" onclick="choosePlace('')">
+              Stand Up Paddle
+            </button>
+            <button class="choices-btn" onclick="choosePlace('')">
+              Hiking
+            </button>
+            <button class="choices-btn" onclick="choosePlace('')">
+              Boat Sunshine
+            </button>
+            <button class="choices-btn" onclick="choosePlace('')">
+              Sunset
+            </button>
           </div>
         </div>
         <div class="container-tips-map">
-          <div class="info info-initial">
+          <div class="info active-img">
             <div class="info-img">
               <img
                 src="assets/images/cathedral1.png"
@@ -171,60 +223,60 @@
               </p>
             </div>
           </div>
-
-          <div class="info info-beach">
-            <div class="info-img">
-              <img
-                src="assets/images/beach.png"
-                alt="Calo des Moro, one of the most beaufitul beaches in Mallorca"
-              />
+          <div>
+            <div id="chose-beach-img" class="info info-beach">
+              <div class="info-img">
+                <img
+                  src="assets/images/beach.png"
+                  alt="Calo des Moro, one of the most beaufitul beaches in Mallorca"
+                />
+              </div>
+              <div class="info-text">
+                <p>
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                </p>
+              </div>
             </div>
-            <div class="info-text">
-              <p>
-                ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
-              </p>
+
+            <div id="chose-restaurant-img" class="info info-restaurant">
+              <div class="info-img">
+                <img
+                  src="assets/images/tapas.png"
+                  alt="Tray with delicius tapas"
+                />
+              </div>
+              <div class="info-text">
+                <p>
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                </p>
+              </div>
+            </div>
+
+            <div id="chose-activitie-img" class="info info-activities">
+              <div class="info-img">
+                <img
+                  src="assets/images/sup.png"
+                  alt="Women practicing stand up paddle"
+                />
+              </div>
+              <div class="info-text">
+                <p>
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADADD CONTENT ADD CONTENT
+                  ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT AD
+                  CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
+                  CONTENT ADD CONTENT AD
+                </p>
+              </div>
             </div>
           </div>
-
-          <div class="info info-restaurant">
-            <div class="info-img">
-              <img
-                src="assets/images/tapas.png"
-                alt="Tray with delicius tapas"
-              />
-            </div>
-            <div class="info-text">
-              <p>
-                ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT
-              </p>
-            </div>
-          </div>
-
-          <div class="info info-activities">
-            <div class="info-img">
-              <img
-                src="assets/images/sup.png"
-                alt="Women practicing stand up paddle"
-              />
-            </div>
-            <div class="info-text">
-              <p>
-                ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT AD
-                CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD CONTENT ADD
-                CONTENT ADD CONTENT AD
-              </p>
-            </div>
-          </div>
-
           <div id="map">
             <h2>MAP</h2>
           </div>

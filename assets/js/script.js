@@ -10,7 +10,7 @@ const navSlide = () => {
   });
 
   // Close burguer by clicking each of the navigation bar links
-  for (i = 0; i < navClose.length; i += 1) {
+  for (i = 0; i < navClose.length; i++) {
     navClose[i].addEventListener("click", () => {
       nav.classList.toggle("nav-active");
     });
@@ -32,6 +32,25 @@ navSlide();
 // const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 // Chosen betwween beach, restaurant, activies
+
+function chooseCategorie(chosen) {
+  const choices = document.getElementsByClassName("choices");
+
+  for (i = 0; i < choices.length; i++) {
+    choices[i].style.display = "none";
+  }
+
+  document.getElementById(chosen).style.display = "flex";
+}
+
+function choosePlace(chosen) {
+  const choices = document.getElementsByClassName("info");
+  for (i = 0; i < choices.length; i++) {
+    choices[i].style.display = "none";
+  }
+
+  document.getElementById(chosen).style.display = "block";
+}
 
 // tl.from(".sun", {
 //   x: "-110vw",
