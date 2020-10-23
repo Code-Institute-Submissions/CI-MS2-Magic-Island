@@ -329,13 +329,35 @@ nav {
   font-size: 0.9rem;
 }
 
+#chose-restaurant .choices-btn {
+  background: #9e2f21;
+  color: #d2d2d2;
+}
+
+#chose-restaurant .choices-btn:focus {
+  background: #d2d2d2;
+  color: #9e2f21;
+  border: 2px solid #9e2f21;
+}
+
+#chose-activitie .choices-btn {
+  background: #de8435;
+  color: #254c54;
+}
+
+#chose-activitie .choices-btn:focus {
+  border: 2px solid #de8435;
+  background: #254c54;
+  color: #de8435;
+}
+
 .container-tips-map {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background: #254c54;
+  background: #542527;
 }
 
 .container-tips-map div {
@@ -367,10 +389,22 @@ nav {
   border: 15px solid #db8d3f;
 }
 
+.info-beach > .info-img > img {
+  border: 15px solid #254c54;
+}
+
+.info-restaurant > .info-img > img {
+  border: 15px solid #9e2f21;
+}
+
 .info-beach,
 .info-restaurant,
 .info-activities {
   display: none;
+}
+
+.info-text {
+  color: #eaeaea;
 }
 
 #map {
