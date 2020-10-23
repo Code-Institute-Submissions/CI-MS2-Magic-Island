@@ -350,6 +350,7 @@ nav {
   font-family: "Montserrat", sans-serif;
   line-height: 1.3rem;
   letter-spacing: 1px;
+  animation: fade-btn 1s;
 }
 
 .info-img {
