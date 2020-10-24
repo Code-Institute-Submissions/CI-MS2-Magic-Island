@@ -210,7 +210,7 @@ nav {
 }
 
 #about-text p {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -429,7 +429,7 @@ nav {
 .container-form {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  height: 70%;
+  height: 80%;
   width: 40%;
   max-width: 600px;
   display: flex;
@@ -658,11 +658,9 @@ footer {
     grid-template-rows: 70vh;
   }
 
-  /*----------------------------------------------------Have a look in the font size in diferent screen sizes*/
-  /* #about-text p {
+  #about-text p {
     font-size: 2.2rem;
-    font-family: "Montserrat";
-  } */
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -670,7 +668,7 @@ footer {
     overflow-x: hidden;
   }
 
-  /*----------------- INTRO ANIMATION -------------------*/
+  /* INTRO ANIMATION */
 
   .intro img {
     width: 500px;
@@ -685,7 +683,7 @@ footer {
     display: none;
   }
 
-  /*----------------- NAVIGATION BAR -------------------*/
+  /* NAVIGATION BAR */
   .nav-links {
     position: absolute;
     right: 0px;
@@ -716,13 +714,13 @@ footer {
     font-size: 300%;
   }
 
-  /*--------------- THINGS TO DO SECTION ---------------*/
+  /* THINGS TO DO SECTION */
   .info-img img {
     width: 250px;
     height: 250px;
   }
 
-  /*---------------------- CONTACT ---------------------*/
+  /* CONTACT */
 
   .container-form {
     width: 95%;
@@ -737,7 +735,7 @@ footer {
     margin-bottom: 30px;
   }
 
-  /*----------------------- FOOTER -----------------------*/
+  /* FOOTER  */
   footer {
     display: flex;
     align-items: center;
