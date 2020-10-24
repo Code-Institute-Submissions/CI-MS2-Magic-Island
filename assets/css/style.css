@@ -186,9 +186,35 @@ nav {
 }
 
 /*------------------ ABOUT SECTION -------------------*/
+
+#scroll-to-top {
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#arrow {
+  width: 1rem;
+  height: 1rem;
+  border-right: 0.2em solid white;
+  border-top: 0.2em solid white;
+  transform: rotate(315deg);
+}
+
 .container-about {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .container-about img {
@@ -764,6 +790,11 @@ footer {
   .intro h2 {
     font-size: 300%;
     margin-top: 17%;
+  }
+
+  .modal {
+    width: 275px;
+    height: 360px;
   }
 }
 
