@@ -52,6 +52,13 @@ function choosePlace(chosen) {
   document.getElementById(chosen).style.display = "block";
 }
 
+// Button scroll to top
+const scrollToTop = document.getElementById("scroll-to-top");
+
+scrollToTop.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
 //Animating things to do section with scroll trigger
 
 const showUpAbout = gsap.timeline({
