@@ -52,6 +52,25 @@ function choosePlace(chosen) {
   document.getElementById(chosen).style.display = "block";
 }
 
+//Animating things to do section with scroll trigger
+
+const showUp = gsap.timeline({
+  scrollTrigger: {
+    trigger: "container-things-to-do",
+    start: "center center",
+  },
+});
+
+showUp
+  .from(".places", { x: -50, opacity: 0, duration: 1.5, stagger: 0.5 })
+  .fromTo(
+    ".info",
+    { y: 300, opacity: 0 },
+    { y: 0, opacity: 1, duration: 1.5 },
+    "-=1.5"
+  )
+  .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=1.5");
+
 // tl.from(".sun", {
 //   x: "-110vw",
 //   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
