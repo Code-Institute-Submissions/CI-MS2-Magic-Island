@@ -59,7 +59,21 @@ scrollToTop.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-//Animating things to do section with scroll trigger
+// Show up button only show up after first scroll
+const scrollToTopShow = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".container-about",
+    star: "center center",
+  },
+});
+
+scrollToTopShow.to("#scroll-to-top", {
+  display: "flex",
+  opacity: 1,
+  duration: 1,
+});
+
+//Animating about and things to do section with scroll trigger
 
 const showUpAbout = gsap.timeline({
   scrollTrigger: {
@@ -102,8 +116,3 @@ sunAnimation.from(".sun", {
   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
   duration: 25,
 });
-
-// document.querySelector(".nav-anchor").addEventListener("click", () => {
-//   document.querySelector("a.nav-anchor").classList.add("active");
-//   //   document.querySelector("a.nav-anchor").classList.add("active");
-// });
