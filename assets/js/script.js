@@ -116,3 +116,31 @@ sunAnimation.from(".sun", {
   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
   duration: 25,
 });
+
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    //CREDIT: Function by W3SCHOOLS - smooth scrolling (using Jquery)
+
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+  //--- END CREDIT ---
