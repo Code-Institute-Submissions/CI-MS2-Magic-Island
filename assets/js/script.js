@@ -71,6 +71,19 @@ showUp
   )
   .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=1.5");
 
+const sunAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: "footer",
+    start: "center bottom",
+  },
+});
+
+sunAnimation.from(".sun", {
+  x: "-100vw",
+  background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
+  duration: 25,
+});
+
 // tl.from(".sun", {
 //   x: "-110vw",
 //   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
