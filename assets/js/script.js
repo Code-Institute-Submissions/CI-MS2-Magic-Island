@@ -54,22 +54,34 @@ function choosePlace(chosen) {
 
 //Animating things to do section with scroll trigger
 
-const showUp = gsap.timeline({
+const showUpAbout = gsap.timeline({
   scrollTrigger: {
-    trigger: "container-things-to-do",
-    start: "center center",
+    trigger: ".container-about",
+    start: "center bottom",
   },
 });
 
-showUp
-  .from(".places", { x: -50, opacity: 0, duration: 1.5, stagger: 0.5 })
-  .fromTo(
-    ".info",
-    { y: 300, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1.5 },
-    "-=1.5"
-  )
-  .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=1.5");
+const showUpThings = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".container-things-to-do",
+    start: "center bottom",
+  },
+});
+
+//Animation only happens in large screens
+if (window.matchMedia("(min-width: 1200px)").matches) {
+  showUpAbout.from("#about-text p", { x: 100, opacity: 0, duration: 1.5 });
+
+  showUpThings
+    .from(".places", { x: -50, opacity: 0, duration: 1.5, stagger: 0.5 })
+    .fromTo(
+      ".info",
+      { y: 300, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5 },
+      "-=2"
+    )
+    .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=2");
+}
 
 const sunAnimation = gsap.timeline({
   scrollTrigger: {
@@ -83,12 +95,6 @@ sunAnimation.from(".sun", {
   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
   duration: 25,
 });
-
-// tl.from(".sun", {
-//   x: "-110vw",
-//   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
-//   duration: 25,
-// });
 
 // document.querySelector(".nav-anchor").addEventListener("click", () => {
 //   document.querySelector("a.nav-anchor").classList.add("active");
