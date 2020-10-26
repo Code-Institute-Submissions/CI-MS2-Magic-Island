@@ -61,7 +61,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 25%;
+  width: 35%;
   font-weight: 500;
   margin-right: 15%;
 }
@@ -122,7 +122,6 @@ nav {
 }
 
 .intro {
-  background: rgb(204, 49, 49);
   position: fixed;
   top: 0;
   left: 0;
@@ -213,7 +212,7 @@ nav {
   background: rgba(0, 0, 0, 1);
   transform: scale(1.1);
 }
-
+/*CREDIT: https://freefrontend.com/css-arrows/ */
 #arrow {
   width: 1.3rem;
   height: 1.3rem;
@@ -222,6 +221,8 @@ nav {
   transform: rotate(315deg);
   margin-top: 10px;
 }
+
+/* END CREDIT */
 
 .container-about {
   display: flex;
@@ -459,7 +460,7 @@ nav {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .container-form {
@@ -478,7 +479,6 @@ nav {
 .container-form h2 {
   color: #eaeaea;
   font-size: 3.5rem;
-  margin-bottom: 70px;
 }
 
 #contactForm {
@@ -653,6 +653,10 @@ footer {
     height: 600px;
   }
 
+  .nav-links {
+    width: 30%;
+  }
+
   .container-things-to-do {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -676,10 +680,6 @@ footer {
 
   .places {
     margin: 10px;
-  }
-
-  .container-tips-map div {
-    margin: 0;
   }
 
   .info-img img {

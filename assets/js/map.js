@@ -86,7 +86,6 @@ function initMap() {
     });
 
     if (props.iconImage) {
-      // Set icon image
       marker.setIcon(props.iconImage);
     }
 
@@ -110,6 +109,7 @@ function initMap() {
     map.setCenter(new google.maps.LatLng(this.dataset.lat, this.dataset.lng));
     map.setZoom(13);
   });
+
   const locations = [
     ["Caló des Moro", 39.31361, 3.121398],
     ["Playa de S'Amarador", 39.349545, 3.185803],
