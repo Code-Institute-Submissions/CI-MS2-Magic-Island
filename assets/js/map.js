@@ -7,22 +7,29 @@ function initMap() {
     center: mallorca,
   });
 
+  const beachFlag =
+    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+
   var markers = [
     {
       coords: { lat: 39.31361, lng: 3.121398 },
       content: "<h2>Caló des Moro</h2>",
+      iconImage: beachFlag,
     },
     {
       coords: { lat: 39.349545, lng: 3.185803 },
       content: "<h2>Playa de S'Amarador</h2>",
+      iconImage: beachFlag,
     },
     {
       coords: { lat: 39.720876, lng: 3.454833 },
       content: "<h2>Calla Agulla</h2>",
+      iconImage: beachFlag,
     },
     {
       coords: { lat: 39.330299, lng: 3.146721 },
       content: "<h2>Cala Santanyí</h2>",
+      iconImage: beachFlag,
     },
     {
       coords: { lat: 39.329965, lng: 3.171178 },
@@ -69,6 +76,11 @@ function initMap() {
       map: map,
     });
 
+    if (props.iconImage) {
+      // Set icon image
+      marker.setIcon(props.iconImage);
+    }
+
     if (props.content) {
       var infoWindow = new google.maps.InfoWindow({
         content: props.content,
@@ -76,7 +88,23 @@ function initMap() {
     }
 
     marker.addListener("click", function () {
+      map.setZoom(12);
       infoWindow.open(map, marker);
     });
+
+    map.addListener("click", function () {
+      if (infoWindow) infoWindow.close();
+    });
   }
+
+  $(".choices-btn").click(function () {
+    map.setCenter(new google.maps.LatLng(this.dataset.lat, this.dataset.lng));
+    map.setZoom(13);
+  });
+  const locations = [
+    ["Caló des Moro", 39.31361, 3.121398],
+    ["Playa de S'Amarador", 39.349545, 3.185803],
+    ["Calla Agulla", 39.720876, 3.454833],
+    ["Cala Santanyí", 51.8503, -8.2943],
+  ];
 }
