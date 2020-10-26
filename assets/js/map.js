@@ -6,6 +6,7 @@ function initMap() {
     zoom: 9,
     center: mallorca,
   });
+
   var markers = [
     {
       coords: { lat: 39.31361, lng: 3.121398 },
@@ -28,32 +29,32 @@ function initMap() {
       content: "<h2>Restaurant L'Arcada</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.751872, lng: 2.629103 },
+      content: "<h2>Restaurant Mirador Na Foradada</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.569088, lng: 2.646143 },
+      content: "<h2>Ombu</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.570167, lng: 2.653738 },
+      content: "<h2>Moltabarra Bar de Tapas</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.376071, lng: 3.239441 },
+      content: "<h2>Marimonte Watersports</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.567618, lng: 2.629953 },
+      content: "<h2>OASIS CATAMARAN</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.633736, lng: 2.486414 },
+      content: "<h2>Puig de Galatzó</h2>",
     },
     {
-      coords: { lat: 39.349545, lng: 3.185803 },
-      content: "<h2>Playa de S'Amarador</h2>",
+      coords: { lat: 39.961451, lng: 3.212298 },
+      content: "<h2>Lighthouse of Cap de Formentor</h2>",
     },
   ];
 

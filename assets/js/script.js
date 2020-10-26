@@ -52,70 +52,70 @@ function choosePlace(chosen) {
   document.getElementById(chosen).style.display = "block";
 }
 
-// // Button scroll to top
-// const scrollToTop = document.getElementById("scroll-to-top");
+// Button scroll to top
+const scrollToTop = document.getElementById("scroll-to-top");
 
-// scrollToTop.addEventListener("click", () => {
-//   window.scrollTo(0, 0);
-// });
+scrollToTop.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 
-// // Show up button only show up after first scroll
-// const scrollToTopShow = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".container-about",
-//     star: "center center",
-//   },
-// });
+// Show up button only show up after first scroll
+const scrollToTopShow = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".container-about",
+    star: "center center",
+  },
+});
 
-// scrollToTopShow.to("#scroll-to-top", {
-//   display: "flex",
-//   opacity: 1,
-//   duration: 1,
-// });
+scrollToTopShow.to("#scroll-to-top", {
+  display: "flex",
+  opacity: 1,
+  duration: 1,
+});
 
-// //Animating about and things to do section with scroll trigger
+//Animating about and things to do section with scroll trigger
 
-// const showUpAbout = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".container-about",
-//     start: "center bottom",
-//   },
-// });
+const showUpAbout = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".container-about",
+    start: "center bottom",
+  },
+});
 
-// const showUpThings = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".container-things-to-do",
-//     start: "center bottom",
-//   },
-// });
+const showUpThings = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".container-things-to-do",
+    start: "center bottom",
+  },
+});
 
-// //Animation only happens in large screens
-// if (window.matchMedia("(min-width: 1200px)").matches) {
-//   showUpAbout.from("#about-text p", { x: 100, opacity: 0, duration: 1.5 });
+//Animation only happens in large screens
+if (window.matchMedia("(min-width: 1200px)").matches) {
+  showUpAbout.from("#about-text p", { x: 100, opacity: 0, duration: 1.5 });
 
-//   showUpThings
-//     .from(".places", { x: -50, opacity: 0, duration: 1.5, stagger: 0.5 })
-//     .fromTo(
-//       ".info",
-//       { y: 300, opacity: 0 },
-//       { y: 0, opacity: 1, duration: 1.5 },
-//       "-=2"
-//     )
-//     .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=2");
-// }
+  showUpThings
+    .from(".places", { x: -50, opacity: 0, duration: 1.5, stagger: 0.5 })
+    .fromTo(
+      ".info",
+      { y: 300, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5 },
+      "-=2"
+    )
+    .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=2");
+}
 
-// const sunAnimation = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "footer",
-//     start: "center bottom",
-//   },
-// });
+const sunAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: "footer",
+    start: "center bottom",
+  },
+});
 
-// sunAnimation.from(".sun", {
-//   x: "-100vw",
-//   background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
-//   duration: 25,
-// });
+sunAnimation.from(".sun", {
+  x: "-100vw",
+  background: "-webkit-radial-gradient(center, #FFEF47, #FFA948)",
+  duration: 25,
+});
 
 $(document).ready(function () {
   // Add smooth scrolling to all links
