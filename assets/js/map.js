@@ -23,7 +23,7 @@ function initMap() {
     },
     {
       coords: { lat: 39.720876, lng: 3.454833 },
-      content: "<h2>Calla Agulla</h2>",
+      content: "<h2>Cala Agulla</h2>",
       iconImage: beachFlag,
     },
     {
@@ -104,7 +104,15 @@ function initMap() {
   const locations = [
     ["Caló des Moro", 39.31361, 3.121398],
     ["Playa de S'Amarador", 39.349545, 3.185803],
-    ["Calla Agulla", 39.720876, 3.454833],
-    ["Cala Santanyí", 51.8503, -8.2943],
+    ["Cala Agulla", 39.720876, 3.454833],
+    ["Cala Santanyí", 39.330299, 3.146721],
+    ["Restaurant L'Arcada", 39.329965, 3.171178],
+    ["Restaurant Mirador Na Foradada", 39.751872, 2.629103],
+    ["Ombu", 39.569088, 2.646143],
+    ["Moltabarra Bar de Tapas", 39.570167, 2.653738],
+    ["Marimonte Watersports", 39.376071, 3.239441],
+    ["OASIS CATAMARAN", 39.567618, 2.629953],
+    ["Puig de Galatzó", 39.633736, 2.486414],
+    ["Lighthouse of Cap de Formentor", 39.961451, 3.212298],
   ];
 }
