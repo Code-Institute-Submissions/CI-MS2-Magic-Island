@@ -52,18 +52,18 @@ function choosePlace(chosen) {
   document.getElementById(chosen).style.display = "block";
 }
 
-// Button scroll to top goes to the home page when clicked
+// Button scroll to top goes to the top of the page when clicked
 const scrollToTop = document.getElementById("scroll-to-top");
 
 scrollToTop.addEventListener("click", () => {
   window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
+    top: 0,
+    left: 0,
+    behavior: "smooth",
   });
 });
 
-// Show up button only show up after first scroll
+// Show up button only shows up after the first scroll
 const scrollToTopShow = gsap.timeline({
   scrollTrigger: {
     trigger: ".container-about",
@@ -77,8 +77,7 @@ scrollToTopShow.to("#scroll-to-top", {
   duration: 1,
 });
 
-//Animating about and things to do section with scroll trigger
-
+// Animating about and things to do section with scroll trigger
 const showUpAbout = gsap.timeline({
   scrollTrigger: {
     trigger: ".container-about",
@@ -107,7 +106,7 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
     )
     .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=2");
 }
-
+// sunAnimation only happens when the footer shows on the screen
 const sunAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: "footer",
@@ -121,11 +120,10 @@ sunAnimation.from(".sun", {
   duration: 25,
 });
 
+//CREDIT: Function by W3SCHOOLS - smooth scrolling (using Jquery)
+// Add smooth scrolling to all links
 $(document).ready(function () {
-  // Add smooth scrolling to all links
   $("a").on("click", function (event) {
-    //CREDIT: Function by W3SCHOOLS - smooth scrolling (using Jquery)
-
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();

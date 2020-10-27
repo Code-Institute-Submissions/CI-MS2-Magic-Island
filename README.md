@@ -1,4 +1,4 @@
-# Magic Island
+# [Magic Island](https://henriqueperoni.github.io/CI-MS2-Magic-Island/)
 
 #ADD MOCKUP
 The aim of this project is to show all the beauty a tourist will find if traveling to Mallorca. I kept the project simple providing information about beaches, places to eat, and things to do. But it can be upgraded easily, and also would feasible have partners and section to book rooms, cars, etc..
@@ -82,7 +82,8 @@ To finish the website the user can send a message through a form in the case hav
 ### 5. Surface
 
 **Colors**:
-Following the 60%/30%/10% rule, I decided to have two main colors which represent 60% of the website, 2 colors representing 30%, and one color for the last 10%. To keep the colors in harmony with the images I pick the colors from some parts of the image. The #254c54 was token from the ocean of the hero image, #db8d3f from the village walls, and #9e2f21 from a food image.
+
+Following the 60%/30%/10% rule, I decided to have two main colors which represent 60% of the website, as the website is about an island the two colors represent the sun(#db8d3f ) and the sea(#254c54 ). Also, 2 colors, representing 30%, and one color for the last 10%. To keep the colors in harmony with the images I picked the colors from some parts of the images. The #254c54 was taken from the ocean of the hero image, #db8d3f from the village walls in the about section, and #9e2f21 from a food image.
 
 ![Palette](assets/images/palette.png)
 
@@ -109,9 +110,9 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 - Pop up Modal when submitting the form with thank you message.
 
-- Scroll to top button - this feature enables the user to quickly move back to the top of the page
+- Scroll to top button - this feature enables the user to quickly move back to the top of the page. The button only shows up after the first scroll.
 
-- Footer representing a sunset.
+- Footer animation representing a sunset.
 
 - Footer with social media links.
 
