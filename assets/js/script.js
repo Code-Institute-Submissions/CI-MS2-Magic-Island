@@ -9,7 +9,7 @@ const navSlide = () => {
     nav.classList.toggle("nav-active");
   });
 
-  // Close burguer by clicking each of the navigation bar links
+  // Close burguer by clicking any of the navigation bar links
   for (i = 0; i < navClose.length; i++) {
     navClose[i].addEventListener("click", () => {
       nav.classList.toggle("nav-active");
@@ -52,11 +52,15 @@ function choosePlace(chosen) {
   document.getElementById(chosen).style.display = "block";
 }
 
-// Button scroll to top
+// Button scroll to top goes to the home page when clicked
 const scrollToTop = document.getElementById("scroll-to-top");
 
 scrollToTop.addEventListener("click", () => {
-  window.scrollTo(0, 0);
+  window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+  });
 });
 
 // Show up button only show up after first scroll
