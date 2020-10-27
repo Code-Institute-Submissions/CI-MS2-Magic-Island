@@ -173,6 +173,8 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
 
+[Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - Google Chrome Extesion Overflow Revealer.
+
 Code Institute SLACK Community - General Resource
 
 ## Testing
@@ -198,6 +200,16 @@ Code Institute SLACK Community - General Resource
 \*
 
 \*
+
+## Project barriers and solutions
+
+- Had an issue with the images of the intro animation for medium and small screens. As the images were vertically positioned on large screens it was not fitting on small screens. I tried to use transform: rotate() property but it did not work for all images. I decided to edit the images in an editor and use the edit images with a media query for small and medium screens.
+
+- After create the burger navigation bar for medium and small screens I had a big challenge trying to figure out how to close it by clicking on the items. After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
+
+-
+
+* Unsolved issue: I wanted to add a smooth behavior when the markers of the map are changed. I tried to find a solution in the Google Maps API documentation, but could not find something to fix it. The map works perfectly, it would be just a better user experience.
 
 ## Deployment
 
