@@ -77,17 +77,23 @@ To finish the website the user can send a message through a form in the case hav
 
 - Home, About, Things to Do, and Contact pages
 
-* Footer with social media icons
-
-*
+- Footer with social media icons
 
 ### 5. Surface
 
 **Colors**:
+Following the 60%/30%/10% rule, I decided to have two main colors which represent 60% of the website, 2 colors representing 30%, and one color for the last 10%. To keep the colors in harmony with the images I pick the colors from some parts of the image. The #254c54 was token from the ocean of the hero image, #db8d3f from the village walls, and #9e2f21 from a food image.
+
+![Palette](assets/images/palette.png)
 
 **Typography**:
 
+- "Josefin Sans" font (with fall-back font of Sans-Serif) for main hadings and navigation bar.
+
+- "Montserrat" font (with fall-back font of Sans-Serif) for general text. A classic font, which gives elegancy to the website and at the same time it's not too formal.
+
 **Images**:
+As mentioned in the colors section, the images, and colors and were carefully chosen to have good harmony between them.
 
 ## Features
 
@@ -97,15 +103,15 @@ To finish the website the user can send a message through a form in the case hav
 
 - Animation before load website showing what to expect.
 
-- Navigation Bar representing a sunset.
+- About and Thing to Do sections nicely fade in with scroll.
 
-- About section nicely fade in with scroll.
+- Things to Do section with buttons showing different things to do, and also showing the locations on the Google Maps API.
 
-- Things to Do section with buttons showing different things to do, and also showing in the Google Maps API.
-
-- Pop up Modal when submitting the form with thank you messages
+- Pop up Modal when submitting the form with thank you message.
 
 - Scroll to top button - this feature enables the user to quickly move back to the top of the page
+
+- Footer representing a sunset.
 
 - Footer with social media links.
 
@@ -137,6 +143,8 @@ To finish the website the user can send a message through a form in the case hav
 
 - [EmailJS API](https://www.emailjs.com/) - Send Emails directly with JavaScript.
 
+- [jQuery](https://jquery.com/) - JavaScript library.
+
 ### 3. Workspace, version control, and repository storage
 
 - [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used to write the code.
@@ -152,8 +160,6 @@ To finish the website the user can send a message through a form in the case hav
 [Stack Overflow](https://pt.stackoverflow.com/) - General resource.
 
 [Youtube](https://www.youtube.com/) - General resource.
-
-[Deep Image](https://deep-image.ai/) - Enhance image.
 
 [CSS Matic](https://www.cssmatic.com) - Box Shadow Genetator.
 
@@ -219,9 +225,9 @@ This project has been deployed on GitHub Pages with the following process:
 
 ## Credits
 
-### Content
-
 ### Media
+
+- Most of the images were from [Unsplash](https://unsplash.com/), but also some was taken from [Pinterest](https://www.pinterest.ie/)
 
 ### Code
 
