@@ -190,27 +190,14 @@ Code Institute SLACK Community - General Resource
 
   - Warning for about section lacks heading. As this section only contains an image and a short paragraph, a heading is not necessary.
 
-  -
+  - Received an error because I had a-tag as a descendant of the button element. Styled the a-tag as a button and deleted and button element.
 
-- [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used for validity CSS
+- CSS
 
--
+  - Ran HTML code through[HTML Validator](https://jigsaw.w3.org/css-validator/).
+  - No errors found.
 
-\*
-
-\*
-
-\*
-
-\*
-
-\*
-
-\*
-
-\*
-
-\*
+- JavaScript
 
 ## Project barriers and solutions
 
