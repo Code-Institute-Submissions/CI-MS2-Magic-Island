@@ -19,9 +19,11 @@ The aim of this project is to show all the beauty a tourist will find if traveli
   - [Features Left to Implement When Skills Develop](#features-left-to-implement-when-skills-develop)
 
 - [Technologies Used](#technologies-used)
+
   - [Languages](#1-languages)
   - [Integrations](#2-integrations)
   - [Workspace, Version Control, and Repository Storage](#3-workspace-version-control-and-repository-storage)
+
 - [Resources](#resources)
 
 - [Testing](#testing)
@@ -178,9 +180,17 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 Code Institute SLACK Community - General Resource
 
-## Testing
+## Testings
 
-- [W3C Markup Validation](https://validator.w3.org/) - Used for validity HTML
+- HTML
+
+  - Ran HTML code through [HTML Validator](https://validator.w3.org/).
+
+  - Two warnings for "The type attribute is unnecessary for JavaScript resources". Deleted both after check they really were not necessary.
+
+  - Warning for about section lacks heading. As this section only contains an image and a short paragraph, a heading is not necessary.
+
+  -
 
 - [W3 CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used for validity CSS
 
@@ -206,7 +216,7 @@ Code Institute SLACK Community - General Resource
 
 - Had an issue with the images of the intro animation for medium and small screens. As the images were vertically positioned on large screens it was not fitting on small screens. I tried to use transform: rotate() property but it did not work for all images. I decided to edit the images in an editor and use the edit images with a media query for small and medium screens.
 
-- After create the burger navigation bar for medium and small screens I had a big challenge trying to figure out how to close it by clicking on the items. After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
+- After create the burger navigation bar for medium and small screens I had a big challenge trying to figure out how to close it by clicking on any of the nav items. After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
 
 -
 
