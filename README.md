@@ -182,9 +182,9 @@ Code Institute SLACK Community - General Resource
 
 ## Testings
 
-- HTML
+### HTML
 
-  - Ran HTML code through [HTML Validator](https://validator.w3.org/).
+- Ran HTML code through [HTML Validator](https://validator.w3.org/).
 
   - Two warnings for "The type attribute is unnecessary for JavaScript resources". Deleted both after check they really were not necessary.
 
@@ -192,12 +192,33 @@ Code Institute SLACK Community - General Resource
 
   - Received an error because I had a-tag as a descendant of the button element. Styled the a-tag as a button and deleted and button element.
 
-- CSS
+### CSS
 
-  - Ran HTML code through[HTML Validator](https://jigsaw.w3.org/css-validator/).
+- Ran HTML code through[HTML Validator](https://jigsaw.w3.org/css-validator/).
   - No errors found.
 
-- JavaScript
+### JavaScript
+- Intro Animation
+    - Checked transitions(duration and delay) of images to the desired one.
+
+- Navigation Bar and Scroll to Top button
+    - Clicked on all navbar links and scroll to top button to ensure the smooth scrolling was working properly.
+    - Tested links on small screens for the hamburger menu, and if it closes when clicked on one of the menu items. 
+    - Checked if the scroll to top button only shows up after the first scroll.    
+
+- About section
+    - Checked if the text nicely fades into the screen when scroll reaches the center of the section as desired.
+   
+- Things to Do section
+    - Checked if the place option buttons nicely fade in one by one.
+    - Checked if the container info and the map nicely fade in at the same time from the bottom and the right, respectively.
+    - Clicked all the button places to check if the choices buttons fade in.
+    - Clicked all the choices buttons to check if the info container is changed to the desired one. Also if the Google Maps API goes to the right location.
+    - Clicked all the markers on the Google Maps API to check if the info windows pop up. Also, clicked outside of the info windows to check if it closes.
+
+- Contact section
+    -
+    
 
 ## Project barriers and solutions
 
