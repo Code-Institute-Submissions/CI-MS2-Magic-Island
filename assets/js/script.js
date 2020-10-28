@@ -20,16 +20,17 @@ const navSlide = () => {
 navSlide();
 
 //Animation when load the page
-// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+const introAnim = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-// tl.to(".intro-beach", { x: "0%", duration: 0.8, delay: 3 });
-// tl.to(".intro-activities", { x: "0%", duration: 0.8, delay: 2 });
-// tl.to(".slider", { y: "-100%", duration: 0.8, delay: 2 });
-// tl.to(".intro", { y: "-100%", duration: 0.8 }, "-=0.8");
-// tl.fromTo("nav, .hero-text", { opacity: 0 }, { opacity: 1, duration: 1 });
-
-//Animation in the footer moving a div from one to edge to another
-// const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+introAnim.to(".intro-beach", { x: "0%", duration: 0.8, delay: 3 });
+introAnim.to(".intro-activities", { x: "0%", duration: 0.8, delay: 2 });
+introAnim.to(".slider", { y: "-100%", duration: 0.8, delay: 2.2 });
+introAnim.to(".intro", { y: "-100%", duration: 0.8 }, "-=0.8");
+introAnim.fromTo(
+  "nav, .hero-text",
+  { opacity: 0 },
+  { opacity: 1, duration: 1 }
+);
 
 // Chosen betwween beach, restaurant, activies
 
@@ -106,6 +107,7 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
     )
     .from("#map", { x: 100, opacity: 0, duration: 1.5 }, "-=2");
 }
+
 // sunAnimation only happens when the footer shows on the screen
 const sunAnimation = gsap.timeline({
   scrollTrigger: {
@@ -113,6 +115,9 @@ const sunAnimation = gsap.timeline({
     start: "center bottom",
   },
 });
+
+// Moving a div from one to edge to another
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 sunAnimation.from(".sun", {
   x: "-100vw",
