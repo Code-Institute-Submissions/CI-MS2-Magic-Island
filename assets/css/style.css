@@ -14,7 +14,7 @@ h4 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-body {
+html {
   overflow-x: hidden;
 }
 
@@ -204,7 +204,7 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: transform 0.6s;
+  transition: transform 0.5s;
 }
 
 #scroll-to-top:active {
@@ -220,7 +220,6 @@ nav {
   transform: rotate(315deg);
   margin-top: 10px;
 }
-
 /* END CREDIT */
 
 .container-about {
@@ -241,9 +240,8 @@ nav {
   color: #132225;
   text-align: center;
   display: grid;
-  justify-content: center;
   min-height: 400px;
-  align-content: center;
+  align-content: space-evenly;
   padding: 5%;
 }
 
@@ -278,10 +276,10 @@ nav {
 
 .btn-places {
   border-radius: 50%;
-  cursor: pointer;
   height: 140px;
   width: 140px;
   box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1);
+  cursor: pointer;
   outline: none;
 }
 
@@ -326,10 +324,6 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 auto;
-}
-
-.choices.active {
-  display: flex;
 }
 
 .choices-btn {
@@ -407,14 +401,12 @@ nav {
   line-height: 1.3rem;
   letter-spacing: 1px;
   animation: fade-btn 1s;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .info-img {
-  max-width: 350px;
   display: flex;
   justify-content: center;
-  margin: 20px;
 }
 
 .info-img img {
@@ -423,6 +415,7 @@ nav {
   object-fit: cover;
   border-radius: 50%;
   border: 15px solid #db8d3f;
+  margin-bottom: 10px;
 }
 
 .info-beach > .info-img > img {
@@ -446,7 +439,7 @@ nav {
 #map {
   width: 400px;
   height: 400px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 /*---------------------- CONTACT ---------------------*/
@@ -455,7 +448,6 @@ nav {
   background: url("../images/sunset-contact.png");
   background-size: cover;
   background-position: center;
-
   height: 100vh;
   display: flex;
   align-items: center;
@@ -682,10 +674,6 @@ footer {
   .places {
     margin: 10px;
   }
-
-  .info-img img {
-    margin-bottom: 10px;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -813,6 +801,11 @@ footer {
     bottom: 55px;
     right: 20px;
     z-index: 10;
+  }
+
+  .info,
+  #map {
+    margin: 20px;
   }
 }
 
