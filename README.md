@@ -16,7 +16,7 @@ The aim of this project is to show all the beauty a tourist will find if traveli
 - [Features](#features)
 
   - [Existing Features](#existing-features)
-  - [Features Left to Implement When Skills Develop](#features-left-to-implement-when-skills-develop)
+  - [Features to consider implementing in the future](#features-to-consider-implementing-in-the-future)
 
 - [Technologies Used](#technologies-used)
 
@@ -180,7 +180,7 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 Code Institute SLACK Community - General Resource
 
-## Testings
+## Testing
 
 ### HTML
 
