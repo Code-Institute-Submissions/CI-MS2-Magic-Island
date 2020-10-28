@@ -133,9 +133,9 @@ nav {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -80%);
 }
 
 .intro img {
@@ -158,9 +158,9 @@ nav {
   margin-top: 8%;
 }
 
-.intro-food {
+/* .intro-food {
   background: #9e2f21;
-}
+} */
 
 .intro-beach {
   background: #254c54;
@@ -744,7 +744,7 @@ footer {
   }
 
   .hero-text {
-    transform: translate(-50%, -85%);
+    transform: translate(-50%, -75%);
   }
 
   .hero-text h1 {
@@ -796,7 +796,7 @@ footer {
 
   .intro h2 {
     font-size: 300%;
-    margin-top: 17%;
+    margin-top: 15%;
   }
 
   .modal {

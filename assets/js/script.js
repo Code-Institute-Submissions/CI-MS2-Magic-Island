@@ -117,7 +117,6 @@ const sunAnimation = gsap.timeline({
 });
 
 // Moving a div from one to edge to another
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 sunAnimation.from(".sun", {
   x: "-100vw",
