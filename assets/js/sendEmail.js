@@ -33,7 +33,7 @@ function startModal() {
 
   modal.addEventListener("click", (e) => {
     if (e.target.id == "modal-contact" || e.target.className == "close-modal") {
-      modal.classList.remove("show-modal");
+      modal.classList.add("move-modal");
     }
   });
 }
