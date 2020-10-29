@@ -5,57 +5,63 @@ The aim of this project is to show all the beauty a tourist will find if traveli
 
 ## Table of Contents:
 
-- [User Experience](#user-experience)
-
+- [UX](#ux)
+  - [User Stories](#user-stories)
   - [Strategy](#1-strategy)
   - [Scope](#2-scope)
   - [Structure](#3-structure)
   - [Skeleton](#4-skeleton)
   - [Surface](#5-surface)
 
-- [Features](#features)
-
+* [Features](#features)
   - [Existing Features](#existing-features)
   - [Features to consider implementing in the future](#features-to-consider-implementing-in-the-future)
 
 - [Technologies Used](#technologies-used)
-
   - [Languages](#1-languages)
   - [Integrations](#2-integrations)
   - [Workspace, Version Control, and Repository Storage](#3-workspace-version-control-and-repository-storage)
 
-- [Resources](#resources)
+* [Resources](#resources)
 
-- [Testing](#testing)
+* [Testing](#testing)
 
-- [Deployment](#deployment)
+* [Deployment](#deployment)
 
 - [Credits](#credits)
-
-  - [Content](#content)
   - [Media](#media)
   - [Code](#code)
 
-- [Acknowledgments](#acknowledgments)
+* [Acknowledgments](#acknowledgments)
 
-## User Experience
+## UX
+
+### User Stories
+
+- I already know that Mallorca is a summer destination.
+- I want to know the best things to do in Mallorca.
+- I want to know if there are more than only beaches in there.
+- I want to get in touch with a specialist if a have doubts.
+
+These goals are accomplished in the following way:
+
+- Animation that shows Mallorca has a rich culinary and exciting activities.
+- Things to Do section with several destinations on the Island.
+- Map to better locate.
+- Contact form to clarify doubts.
 
 ### 1. Strategy
 
 Project Goals:
 
 - Provide information on holiday destinations.
-
 - Inspire people that are thinking to go on holiday with images and tips.
-
 - Increase the number of tourists in Mallorca.
 
 Customer Goals:
 
 - Get inspired for their next holiday destination.
-
 - Find accurate information on different subjects
-
 - Have a way to make contact and clarify doubts.
 
 ### 2. Scope
@@ -74,11 +80,8 @@ To finish the website the user can send a message through a form in the case hav
 # ADD WIREFRAME
 
 - Wireframes
-
 - Fixed navigation bar(Burguer menu for small screens)
-
 - Home, About, Things to Do, and Contact pages
-
 - Footer with social media icons
 
 ### 5. Surface
@@ -103,25 +106,17 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 ### Existing Features
 
 - Designed with HTML5, CSS3, JavaScript and GSAP.
-
 - Animation before load website showing what to expect.
-
 - About and Thing to Do sections nicely fade in with scroll.
-
 - Things to Do section with buttons showing different things to do, and also showing the locations on the Google Maps API.
-
 - Pop up Modal when submitting the form with thank you message.
-
 - Scroll to top button - this feature enables the user to quickly move back to the top of the page. The button only shows up after the first scroll.
-
 - Footer animation representing a sunset.
-
 - Footer with social media links.
 
 ### Features to consider implementing in the future
 
 - A partner section with a direct way to book rooms, cars.
-
 - Sign in for a newsletter with the possibility to get discount vouchers in restaurants and attractions.
 
 ## Technologies Used
@@ -129,56 +124,37 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 ### 1. Languages
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-
 - [CSS](https://en.wikipedia.org/wiki/CSS)
-
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### 2. Integrations
 
 - [Google Fonts](https://fonts.google.com/) - Typography.
-
 - [FontAwesome](https://fontawesome.com/) - Used for icons.
-
 - [GSAP](https://greensock.com/gsap/) - Animations Library.
-
 - [Google Maps JavaScript API](https://cloud.google.com/maps-platform/) - Interative Maps API.
-
 - [EmailJS API](https://www.emailjs.com/) - Send Emails directly with JavaScript.
-
 - [jQuery](https://jquery.com/) - JavaScript library.
 
 ### 3. Workspace, version control, and repository storage
 
 - [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used to write the code.
-
 - [GitHub](https://github.com/) - Repository hosting service to host the deployed website and track previous versions of code.
-
 - [Git](https://git-scm.com/) - Version control tool to record changes and updates to my files.
 
 ## Resources
 
-[W3.CSS](https://www.w3schools.com/w3css/defaulT.asp) - General resource.
-
-[Stack Overflow](https://pt.stackoverflow.com/) - General resource.
-
-[Youtube](https://www.youtube.com/) - General resource.
-
-[CSS Matic](https://www.cssmatic.com) - Box Shadow Genetator.
-
-[CSS Gradient](https://cssgradient.io/) - Gradient Generator
-
-[CommonMark](https://commonmark.org/) - For Markdown language reference.
-
-[Coolors](https://coolors.co/) - Find matching color palette for site.
-
-[TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
-
-[Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
-
-[Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - Google Chrome Extesion Overflow Revealer.
-
-Code Institute SLACK Community - General Resource
+- [W3.CSS](https://www.w3schools.com/w3css/defaulT.asp) - General resource.
+- [Stack Overflow](https://pt.stackoverflow.com/) - General resource.
+- [Youtube](https://www.youtube.com/) - General resource.
+- [CSS Matic](https://www.cssmatic.com) - Box Shadow Genetator.
+- [CSS Gradient](https://cssgradient.io/) - Gradient Generator
+- [CommonMark](https://commonmark.org/) - For Markdown language reference.
+- [Coolors](https://coolors.co/) - Find matching color palette for site.
+- [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
+- [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - Google Chrome Extesion Overflow Revealer.
+- Code Institute SLACK Community - General Resource
 
 ## Testing
 
@@ -187,14 +163,12 @@ Code Institute SLACK Community - General Resource
 - Ran HTML code through [HTML Validator](https://validator.w3.org/).
 
   - Two warnings for "The type attribute is unnecessary for JavaScript resources". Deleted both after check they really were not necessary.
-
   - Warning for about section lacks heading. As this section only contains an image and a short paragraph, a heading is not necessary.
-
   - Received an error because I had a-tag as a descendant of the button element. Styled the a-tag as a button and deleted and button element.
 
 ### CSS
 
-- Ran HTML code through[HTML Validator](https://jigsaw.w3.org/css-validator/).
+- Ran HTML code through [HTML Validator](https://jigsaw.w3.org/css-validator/).
   - No errors found.
 
 ### JAVASCRIPT
@@ -210,7 +184,9 @@ Code Institute SLACK Community - General Resource
   - Checked if the scroll to top button only shows up after the first scroll.
 
 - About section
+
   - Checked if the text nicely fades into the screen when scroll reaches the center of the section as desired.
+
 - Things to Do section
 
   - Checked if the place option buttons nicely fade in one by one.
@@ -234,9 +210,7 @@ Code Institute SLACK Community - General Resource
 ## Project barriers and solutions
 
 - Had an issue with the images of the intro animation for medium and small screens. As the images were vertically positioned on large screens it was not fitting on small screens. I tried to use transform: rotate() property but it did not work for all images. I decided to edit the images in an editor and use the edit images with a media query for small and medium screens.
-
 - After create the burger navigation bar for medium and small screens I had a big challenge trying to figure out how to close it by clicking on any of the nav items. After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
-
 -
 
 * Unsolved issue: I wanted to add a smooth behavior when the markers of the map are changed. I tried to find a solution in the Google Maps API documentation, but could not find something to fix it. The map works perfectly, it would be just a better user experience.
@@ -246,23 +220,14 @@ Code Institute SLACK Community - General Resource
 This project has been deployed on GitHub Pages with the following process:
 
 1. All code was written on Gitpod, an online IDE.
-
 2. The code was then pushed to GitHub where it is stored in my Repository.
-
 3. Under the settings section of the GitHub repository, scroll down to the GitHub Pages section.
-
 4. Under 'Source' drop-down, the 'Master branch' was selected.
-
 5. Once selected, this publishes the project to GitHub Pages and displays the site URL.
-
 6. There is no difference between the deployed version and the development version.
-
 7. The code can be run locally through clone or download.
-
 8. You can do this by opening the repository, clicking on the green 'Code' button, and selecting either 'clone or download'.
-
 9. The Clone option provides a URL, which you can use on your desktop IDE.
-
 10. The Download ZIP option provides a link to download a ZIP file that can be unzipped on your local machine.
 
 ## Credits
