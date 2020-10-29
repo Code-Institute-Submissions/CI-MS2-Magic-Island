@@ -157,6 +157,33 @@ nav {
   text-align: center;
 }
 
+#skip-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 85px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  z-index: 500;
+  transition: transform 0.5s;
+}
+
+#skip-btn:hover {
+  background: rgba(226, 226, 266, 0.8);
+  transform: scale(1.1);
+}
+
+#skip-btn:active {
+  transform: scale(1.1);
+}
+
 .intro-food {
   background: #9e2f21;
 }

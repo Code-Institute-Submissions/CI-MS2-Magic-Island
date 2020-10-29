@@ -12,27 +12,20 @@ The aim of this project is to show all the beauty a tourist will find if traveli
   - [Structure](#3-structure)
   - [Skeleton](#4-skeleton)
   - [Surface](#5-surface)
-
-* [Features](#features)
+- [Features](#features)
   - [Existing Features](#existing-features)
   - [Features to consider implementing in the future](#features-to-consider-implementing-in-the-future)
-
 - [Technologies Used](#technologies-used)
   - [Languages](#1-languages)
   - [Integrations](#2-integrations)
   - [Workspace, Version Control, and Repository Storage](#3-workspace-version-control-and-repository-storage)
-
-* [Resources](#resources)
-
-* [Testing](#testing)
-
-* [Deployment](#deployment)
-
+- [Resources](#resources)
+- [Testing](#testing)
+- [Deployment](#deployment)
 - [Credits](#credits)
   - [Media](#media)
   - [Code](#code)
-
-* [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#acknowledgments)
 
 ## UX
 
