@@ -1,163 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Magic Island</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/favicon.png"
-    />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("user_n27qJAh0791phWWb5Bl22");
-      })();
-    </script>
-  </head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<title>Magic Island</title>
+	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <div id="home">
-      <nav>
-        <div class="logo">
-          <a href="#home"
-            ><img
+</head>
+
+<body>
+	<!-- NAVIGATION BAR -->
+	<div id="home">
+		<nav>
+			<div class="logo">
+				<a href="#home"><img
               id="logo-img"
               src="assets/images/logo.png"
               alt="Logo that looks like a sun"
           /></a>
-          <a href="#home">
-            <h3>Magic Island</h3>
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a class="nav-anchor" href="#home">Home</a></li>
-          <li><a class="nav-anchor" href="#about">About</a></li>
-          <li><a class="nav-anchor" href="#things-to-do">Things to Do</a></li>
-          <li><a class="nav-anchor" href="#contact">Contact</a></li>
-        </ul>
-        <div class="burguer">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-    </div>
+					<a href="#home">
+						<h3>Magic Island</h3>
+					</a>
+			</div>
+			<ul class="nav-links">
+				<li><a class="nav-anchor" href="#home">Home</a></li>
+				<li><a class="nav-anchor" href="#about">About</a></li>
+				<li><a class="nav-anchor" href="#things-to-do">Things to Do</a></li>
+				<li><a class="nav-anchor" href="#contact">Contact</a></li>
+			</ul>
+			<div class="burguer">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</div>
 
-    <!-- INTRO SECTION -->
-    <section id="hero">
-      <div class="hero-text">
-        <h1>Welcome to Mallorca!</h1>
-      </div>
-
-      <div class="intro intro-food">
-        <h2>Delicius Food</h2>
-        <div class="container-images-intro">
-          <img
+	<!-- INTRO SECTION -->
+	<section id="hero">
+		<div class="hero-text">
+			<h1>Welcome to Mallorca!</h1>
+		</div>
+		<button id="skip-btn">Skip</button>
+		<div class="intro intro-food">
+			<h2>Delicius Food</h2>
+			<div class="container-images-intro">
+				<img
             class="img-horizontal"
             src="assets/images/intro-food.png"
             alt="Different Spanish food dishes sitting on a table"
           />
-          <img
+				<img
             class="img-vertical"
             src="assets/images/intro-food-vertical.png"
             alt="Different Spanish food dishes sitting on a table"
           />
         </div>
-      </div>
-      <div class="intro intro-beach">
-        <h2>Fascinating Beaches</h2>
-        <div class="container-images-intro">
-          <img
+			</div>
+			<div class="intro intro-beach">
+				<h2>Fascinating Beaches</h2>
+				<div class="container-images-intro">
+					<img
             class="img-horizontal"
             src="assets/images/intro-beach.png"
             alt="Beautiful beach between two mountains"
           />
-          <img
+					<img
             class="img-vertical"
             src="assets/images/intro-beach-vertical.png"
             alt="Beautiful beach between two mountains"
           />
         </div>
-      </div>
-      <div class="intro intro-activities">
-        <h2>Thrilling Adventures</h2>
-        <div class="container-images-intro">
-          <img
+				</div>
+				<div class="intro intro-activities">
+					<h2>Thrilling Adventures</h2>
+					<div class="container-images-intro">
+						<img
             class="img-horizontal"
             src="assets/images/intro-activities.png"
             alt="Man practicing Stand-Up Paddle in the ocean with an astonishing sunset behind him"
           />
-          <img
+						<img
             class="img-vertical"
             src="assets/images/intro-activities-vertical.png"
             alt="Man practicing Stand-Up Paddle in the ocean with an astonishing sunset behind him"
           />
         </div>
-      </div>
-      <div class="slider"></div>
-    </section>
+					</div>
+					<div class="slider"></div>
+	</section>
 
-    <!-- ABOUT SECTION -->
+	<!-- ABOUT SECTION -->
 
-    <section id="about">
-      <div class="container-about">
-        <img
+	<section id="about">
+		<div class="container-about">
+			<img
           src="assets/images/village.png"
           alt="A street from Valldemossa, an old town style village"
         />
-        <div id="about-text">
-          <p>
-            One of the most beautiful destinations on Earth. Mallorca has
-            everything you need, astonishing beaches, tasty food, and much more.
-          </p>
-          <p>We are here to help you find whatever you need!</p>
-        </div>
-        <a href="#home" id="scroll-to-top"><i id="arrow"></i></a>
-      </div>
-    </section>
+			<div id="about-text">
+				<p>
+					One of the most beautiful destinations on Earth. Mallorca has
+					everything you need, astonishing beaches, tasty food, and much more.
+				</p>
+				<p>We are here to help you find whatever you need!</p>
+			</div>
+			<a href="#home" id="scroll-to-top"><i id="arrow"></i></a>
+		</div>
+	</section>
 
-    <!-- THINGS TO DO SECTION -->
+	<!-- THINGS TO DO SECTION -->
 
-    <section id="things-to-do">
-      <div class="container-things-to-do">
-        <div class="container-btns">
-          <div class="place-option">
-            <div class="places beach">
-              <button
+	<section id="things-to-do">
+		<div class="container-things-to-do">
+			<div class="container-btns">
+				<div class="place-option">
+					<div class="places beach">
+						<button
                 class="btn-places btn-beach"
                 onclick="chooseCategorie('chose-beach')"
               ></button>
-              <h3>Beaches</h3>
-            </div>
-            <div class="places restaurtant">
-              <button
+						<h3>Beaches</h3>
+					</div>
+					<div class="places restaurtant">
+						<button
                 class="btn-places btn-restaurtant"
                 onclick="chooseCategorie('chose-restaurant')"
               ></button>
-              <h3>Restaurants</h3>
-            </div>
-            <div class="places activities">
-              <button
+						<h3>Restaurants</h3>
+					</div>
+					<div class="places activities">
+						<button
                 class="btn-places btn-activities"
                 onclick="chooseCategorie('chose-activitie')"
               ></button>
-              <h3>Activities</h3>
-            </div>
-          </div>
+						<h3>Activities</h3>
+					</div>
+				</div>
 
-          <div id="chose-beach" class="choices">
-            <button
+				<div id="chose-beach" class="choices">
+					<button
               class="choices-btn"
               onclick="choosePlace('calo-des-moro')"
               data-lat="39.31361"
@@ -165,7 +153,7 @@
             >
               Caló des Moro
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('playa-samarador')"
               data-lat="39.349545"
@@ -173,7 +161,7 @@
             >
               Playa de S'Amarador
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('cala-agulla')"
               data-lat="39.720876"
@@ -181,7 +169,7 @@
             >
               Cala Agulla
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('cala-santanyi')"
               data-lat="39.330299"
@@ -189,9 +177,9 @@
             >
               Cala Santanyí
             </button>
-          </div>
-          <div id="chose-restaurant" class="choices">
-            <button
+				</div>
+				<div id="chose-restaurant" class="choices">
+					<button
               class="choices-btn"
               onclick="choosePlace('larcada')"
               data-lat="39.329965"
@@ -199,7 +187,7 @@
             >
               Restaurant L'Arcada
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('mirador-foradada')"
               data-lat="39.751872"
@@ -207,7 +195,7 @@
             >
               Restaurant Mirador Na Foradada
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('ombu')"
               data-lat="39.569088"
@@ -215,7 +203,7 @@
             >
               Ombu
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('moltabarra')"
               data-lat="39.570167"
@@ -223,9 +211,9 @@
             >
               Moltabarra Bar de Tapas
             </button>
-          </div>
-          <div id="chose-activitie" class="choices">
-            <button
+				</div>
+				<div id="chose-activitie" class="choices">
+					<button
               class="choices-btn"
               onclick="choosePlace('sup/kayak')"
               data-lat="39.376071"
@@ -233,7 +221,7 @@
             >
               Stand-Up Paddle / Kayak
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('boat')"
               data-lat="39.567618"
@@ -241,7 +229,7 @@
             >
               Boat Trip
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('hiking')"
               data-lat="39.633736"
@@ -249,7 +237,7 @@
             >
               Hiking
             </button>
-            <button
+					<button
               class="choices-btn"
               onclick="choosePlace('sunset')"
               data-lat="39.961451"
@@ -257,246 +245,277 @@
             >
               Sunset
             </button>
-          </div>
-        </div>
-        <div class="container-tips-map">
-          <div class="info active-img">
-            <div class="info-img">
-              <img
+				</div>
+			</div>
+			<div class="container-tips-map">
+				<div class="info active-img">
+					<div class="info-img">
+						<img
                 src="assets/images/cathedral.png"
                 alt="Cathedral of Santa Maria of Palma, a big church in the o heart of Palma"
               />
             </div>
-            <div class="info-text">
-              <p>
-                Mallorca has many things to do, if want to relax, or eat some
-                delicius seafood, or even go for a hiking. We can do all these
-                things only in one place, Mallorca. Spend some time looking into
-                our options which are divided into three main categories,
-                Beaches, Restaurant and Activities. As an extra tip, don't
-                forget to visit the Cathedral of Santa Maria of Palma, a unique
-                Cathedral from the 14th century.
-              </p>
-            </div>
-          </div>
-          <div id="calo-des-moro" class="info info-beach">
-            <div class="info-img">
-              <img
+						<div class="info-text">
+							<p>
+								Mallorca has many things to do, if want to relax, or eat some
+								delicius seafood, or even go for a hiking. We can do all these
+								things only in one place, Mallorca. Spend some time looking into
+								our options which are divided into three main categories,
+								Beaches, Restaurant and Activities. As an extra tip, don't
+								forget to visit the Cathedral of Santa Maria of Palma, a unique
+								Cathedral from the 14th century.
+							</p>
+						</div>
+					</div>
+					<div id="calo-des-moro" class="info info-beach">
+						<div class="info-img">
+							<img
                 src="assets/images/beach.png"
                 alt="Calo des Moro, one of the most beaufitul beaches in Mallorca"
               />
             </div>
-            <div class="info-text">
-              <p>
-                If not the most beautiful beach in the world, Calo des Moro is
-                definitely in the top 5. As everything has it's price, to get to
-                the beach a 15 minutes hiking on a narrow trail has to be done.
-                But that is really cheap knowing that in the end, you will
-                arrive in paradise.
-              </p>
-            </div>
-          </div>
-          <div id="playa-samarador" class="info info-beach">
-            <div class="info-img">
-              <img
+							<div class="info-text">
+								<p>
+									If not the most beautiful beach in the world, Calo des Moro is
+									definitely in the top 5. As everything has it's price, to get to
+									the beach a 15 minutes hiking on a narrow trail has to be done.
+									But that is really cheap knowing that in the end, you will
+									arrive in paradise.
+								</p>
+							</div>
+						</div>
+						<div id="playa-samarador" class="info info-beach">
+							<div class="info-img">
+								<img
                 src="assets/images/samador.png"
                 alt="Playa de S'Amarador with its blue water and white sand"
               />
             </div>
-            <div class="info-text">
-              <p>
-                Playa de S'Amarador is white sand beach that is part of the
-                protected Mondrago National Park. ’Amarador is 145 metres long
-                and 50 metres wide with fine, white sand and clear, shallow
-                water. If you wish to visit the equally beautiful neighbouring
-                beach of Cala Mondrago, you can follow the 300-400 metre long
-                mountain path that connects the two.
-              </p>
-            </div>
-          </div>
-          <div id="cala-agulla" class="info info-beach">
-            <div class="info-img">
-              <img
+								<div class="info-text">
+									<p>
+										Playa de S'Amarador is white sand beach that is part of the
+										protected Mondrago National Park. ’Amarador is 145 metres long
+										and 50 metres wide with fine, white sand and clear, shallow
+										water. If you wish to visit the equally beautiful neighbouring
+										beach of Cala Mondrago, you can follow the 300-400 metre long
+										mountain path that connects the two.
+									</p>
+								</div>
+							</div>
+							<div id="cala-agulla" class="info info-beach">
+								<div class="info-img">
+									<img
                 src="assets/images/cala-agulla.png"
                 alt="Cala Agulla and all its beauty on a sunny day"
               />
             </div>
-            <div class="info-text">
-              <p>
-                A large, beautiful beach that is family friendly. At nearly 525
-                metres long, this white sand beach is full of water sports and
-                activities including paddle boats, kayaks, and stand up paddle
-                boarding. The water is clear and clean, with some shallow rocks
-                to watch out for whether you are walking or swimming
-              </p>
-            </div>
-          </div>
-          <div id="cala-santanyi" class="info info-beach">
-            <div class="info-img">
-              <img
+									<div class="info-text">
+										<p>
+											A large, beautiful beach that is family friendly. At nearly 525
+											metres long, this white sand beach is full of water sports and
+											activities including paddle boats, kayaks, and stand up paddle
+											boarding. The water is clear and clean, with some shallow rocks
+											to watch out for whether you are walking or swimming
+										</p>
+									</div>
+								</div>
+								<div id="cala-santanyi" class="info info-beach">
+									<div class="info-img">
+										<img
                 src="assets/images/cala-santanyi.png"
                 alt="Beach from a top view with a very clean and green water"
               />
             </div>
-            <div class="info-text">
-              <p>
-                Cala Santanyí is located about 10 kilometres from the charming
-                village of Santanyi. The 130-metre long beach is made up of
-                fine, white sand and the waters are clear and calm, perfect for
-                families as well as for good snorkelling. During the summer Cala
-                Santanyí can be really busy, so to find a good spot would be a
-                good idea early in the morning.
-              </p>
-            </div>
-          </div>
-          <div id="larcada" class="info info-restaurant">
-            <div class="info-img">
-              <img
+										<div class="info-text">
+											<p>
+												Cala Santanyí is located about 10 kilometres from the charming
+												village of Santanyi. The 130-metre long beach is made up of
+												fine, white sand and the waters are clear and calm, perfect for
+												families as well as for good snorkelling. During the summer Cala
+												Santanyí can be really busy, so to find a good spot would be a
+												good idea early in the morning.
+											</p>
+										</div>
+									</div>
+									<div id="larcada" class="info info-restaurant">
+										<div class="info-img">
+											<img
                 src="assets/images/paella.png"
                 alt="Delicious paella from L'Arcada Restaurant"
               />
             </div>
-            <div class="info-text">
-              <p>
-                Definitely the best restaurant in Cala Figuera. With a rich menu
-                which includes delicious fishes, a big range of different tapas.
-                But the main dish in L'Arcada is the Paella, as you can see in
-                the picture, it looks delicious.
-              </p>
-            </div>
-          </div>
-          <div id="mirador-foradada" class="info info-restaurant">
-            <div class="info-img">
-              <img
+											<div class="info-text">
+												<p>
+													Definitely the best restaurant in Cala Figuera. With a rich menu
+													which includes delicious fishes, a big range of different tapas.
+													But the main dish in L'Arcada is the Paella, as you can see in
+													the picture, it looks delicious.
+												</p>
+											</div>
+										</div>
+										<div id="mirador-foradada" class="info info-restaurant">
+											<div class="info-img">
+												<img
                 src="assets/images/mirador-foradada.png"
                 alt="Table set up for dinner with an amazing view of the ocean"
               />
             </div>
-            <div class="info-text">
-              <p>
-                Although you can find delicious food at Na Foradada Restaurant
-                the main "dish" there is the view. If you get a table there(what
-                is not easy), you will be sitting beside a mountain beside the
-                sea. A good tip is you order your food before your after the
-                sunset because will be impossible for you care about food when
-                you are facing the most beautiful sunset you ever saw.
-              </p>
+												<div class="info-text">
+													<p>
+														Although you can find delicious food at Na Foradada Restaurant
+														the main "dish" there is the view. If you get a table there(what
+														is not easy), you will be sitting beside a mountain beside the
+														sea. A good tip is you order your food before your after the
+														sunset because will be impossible for you care about food when
+														you are facing the most beautiful sunset you ever saw.
+													</p>
+												</div>
+											</div>
+											<div id="ombu" class="info info-restaurant">
+												<div class="info-img">
+													<img src="assets/images/ombu.png" alt="Tapas on a tray" />
             </div>
-          </div>
-          <div id="ombu" class="info info-restaurant">
-            <div class="info-img">
-              <img src="assets/images/ombu.png" alt="Tapas on a tray" />
+													<div class="info-text">
+														<p>
+															If you are looking for a place to relax and have delicious
+															portions, including a huge range os tapas, Ombu is the place
+															you
+															are looking for. Located in the center of Palma beside of
+															the
+															Plaza de la Reina fountain, makes it a magnet for visitors
+															and
+															the outdoor tables are often full.
+														</p>
+													</div>
+												</div>
+												<div id="moltabarra" class="info info-restaurant">
+													<div class="info-img">
+														<img src="assets/images/bar.png" alt="People making a toasting" />
             </div>
-            <div class="info-text">
-              <p>
-                If you are looking for a place to relax and have delicious
-                portions, including a huge range os tapas, Ombu is the place you
-                are looking for. Located in the center of Palma beside of the
-                Plaza de la Reina fountain, makes it a magnet for visitors and
-                the outdoor tables are often full.
-              </p>
-            </div>
-          </div>
-          <div id="moltabarra" class="info info-restaurant">
-            <div class="info-img">
-              <img src="assets/images/bar.png" alt="People making a toasting" />
-            </div>
-            <div class="info-text">
-              <p>
-                Moltabarra Bar de Tapas is a typical Spanish bar. With an old
-                school decoration, the place is very cozy and simple. The
-                perfect place for a happy hour. Moltabarra bar is even famous in
-                Palma, the bar was transformed in the Joan's Bar from the UK
-                series the Mallorca Files.
-              </p>
-            </div>
-          </div>
-          <div id="sup/kayak" class="info info-activities">
-            <div class="info-img">
-              <img
+														<div class="info-text">
+															<p>
+																Moltabarra Bar de Tapas is a typical Spanish bar. With
+																an old
+																school decoration, the place is very cozy and simple.
+																The
+																perfect place for a happy hour. Moltabarra bar is even
+																famous in
+																Palma, the bar was transformed in the Joan's Bar from
+																the UK
+																series the Mallorca Files.
+															</p>
+														</div>
+													</div>
+													<div id="sup/kayak" class="info info-activities">
+														<div class="info-img">
+															<img
                 src="assets/images/sup-kayak.png"
                 alt="Kyaks floating on the sea"
               />
             </div>
-            <div class="info-text">
-              <p>
-                A lovely way to practice some sports on the beach. You can rent
-                the Stand-Up Paddle and kayaks for one, two, or whatever amount
-                of hours you want, even for the full day. You also don't have to
-                worry about you have any experience, you can a quick explanation
-                with very usual tips, or get a 15 min course. And then jump into
-                the water when you will truly learn.
-              </p>
+															<div class="info-text">
+																<p>
+																	A lovely way to practice some sports on the beach.
+																	You can rent
+																	the Stand-Up Paddle and kayaks for one, two, or
+																	whatever amount
+																	of hours you want, even for the full day. You also
+																	don't have to
+																	worry about you have any experience, you can a quick
+																	explanation
+																	with very usual tips, or get a 15 min course. And
+																	then jump into
+																	the water when you will truly learn.
+																</p>
+															</div>
+														</div>
+														<div id="boat" class="info info-activities">
+															<div class="info-img">
+																<img src="assets/images/boat.png" alt="Boat on the ocean" />
             </div>
-          </div>
-          <div id="boat" class="info info-activities">
-            <div class="info-img">
-              <img src="assets/images/boat.png" alt="Boat on the ocean" />
-            </div>
-            <div class="info-text">
-              <p>
-                If a kayak is too small for you, you can have a boat. There are
-                a lot of different boat trips, you can go in the morning to see
-                dolphins, in the evening to enjoy the sunset from a unique view
-                and many more options. There is also the possibility to rent a
-                boat just for you and your family, there are boats for 5 up to
-                20 people.
-              </p>
-            </div>
-          </div>
-          <div id="hiking" class="info info-activities">
-            <div class="info-img">
-              <img
+																<div class="info-text">
+																	<p>
+																		If a kayak is too small for you, you can have a
+																		boat. There are
+																		a lot of different boat trips, you can go in the
+																		morning to see
+																		dolphins, in the evening to enjoy the sunset
+																		from a unique view
+																		and many more options. There is also the
+																		possibility to rent a
+																		boat just for you and your family, there are
+																		boats for 5 up to
+																		20 people.
+																	</p>
+																</div>
+															</div>
+															<div id="hiking" class="info info-activities">
+																<div class="info-img">
+																	<img
                 src="assets/images/hiking.png"
                 alt="Women hiking in a mountain"
               />
             </div>
-            <div class="info-text">
-              <p>
-                Mallorca has two mountain ranges - Serra de Tramuntana and
-                Sierra de Llevant - with more than five summits over 1,000
-                meters high. There have been guided mountain tours for over
-                three decades, with increasing popularity over the last number
-                of years. Nowadays there is something for everyone. Depending on
-                the level of skill, one can opt for a leisurely mountain walk,
-                suitable for children as well, a rigorous hike for more advanced
-                hikers, or a challenging climb which one should only attempt
-                with suitable equipment and a mountain guide who knows the
-                terrain.
-              </p>
-            </div>
-          </div>
-          <div id="sunset" class="info info-activities">
-            <div class="info-img">
-              <img
+																	<div class="info-text">
+																		<p>
+																			Mallorca has two mountain ranges - Serra de
+																			Tramuntana and
+																			Sierra de Llevant - with more than five
+																			summits over 1,000
+																			meters high. There have been guided mountain
+																			tours for over
+																			three decades, with increasing popularity
+																			over the last number
+																			of years. Nowadays there is something for
+																			everyone. Depending on
+																			the level of skill, one can opt for a
+																			leisurely mountain walk,
+																			suitable for children as well, a rigorous
+																			hike for more advanced
+																			hikers, or a challenging climb which one
+																			should only attempt
+																			with suitable equipment and a mountain guide
+																			who knows the
+																			terrain.
+																		</p>
+																	</div>
+																</div>
+																<div id="sunset" class="info info-activities">
+																	<div class="info-img">
+																		<img
                 src="assets/images/sunset.png"
                 alt="Sunset in the ocean with huge mountains on the side"
               />
             </div>
-            <div class="info-text">
-              <p>
-                The Lighthouse of Cap de Formentor is a beautiful place and has
-                an incredible view at any time of the day. But the sunset in
-                there is probably the most beautiful you will ever see in your
-                life. On one side there are huge mountains and on the other one
-                the sun saying goodbye to the ocean, the perfect combination.
-              </p>
-            </div>
-          </div>
-          <div id="map"></div>
-        </div>
-      </div>
-    </section>
+																		<div class="info-text">
+																			<p>
+																				The Lighthouse of Cap de Formentor is a
+																				beautiful place and has
+																				an incredible view at any time of the
+																				day. But the sunset in
+																				there is probably the most beautiful you
+																				will ever see in your
+																				life. On one side there are huge
+																				mountains and on the other one
+																				the sun saying goodbye to the ocean, the
+																				perfect combination.
+																			</p>
+																		</div>
+																	</div>
+																	<div id="map"></div>
+																</div>
+															</div>
+	</section>
 
-    <!-- CONTACT SECTION -->
+	<!-- CONTACT SECTION -->
 
-    <section id="contact">
-      <div class="container-contact">
-        <div class="container-form">
-          <h2>Contact Us</h2>
-          <form id="contactForm" onsubmit="return sendMail(this);">
-            <label for="fname">First Name:</label>
-            <input
+	<section id="contact">
+		<div class="container-contact">
+			<div class="container-form">
+				<h2>Contact Us</h2>
+				<form id="contactForm" onsubmit="return sendMail(this);">
+					<label for="fname">First Name:</label>
+					<input
               class="text-input"
               id="fname"
               name="fname"
@@ -504,8 +523,8 @@
               placeholder="First Name"
               required
             />
-            <label for="lname">Last Name:</label>
-            <input
+					<label for="lname">Last Name:</label>
+					<input
               class="text-input"
               id="lname"
               name="lname"
@@ -513,8 +532,8 @@
               placeholder="Last Name"
               required
             />
-            <label for="email">Email Address:</label>
-            <input
+					<label for="email">Email Address:</label>
+					<input
               class="text-input"
               id="email"
               name="email"
@@ -522,7 +541,7 @@
               placeholder="First Name"
               required
             />
-            <textarea
+					<textarea
               class="text-input"
               name="message"
               id="message"
@@ -531,60 +550,60 @@
               minlength="10"
               required
             ></textarea>
-            <input id="btn-form" type="submit" value="Submit" />
+					<input id="btn-form" type="submit" value="Submit" />
           </form>
-        </div>
-        <div id="modal-contact" class="container-modal">
-          <div class="modal">
-            <h3>Hello!</h3>
-            <h3>Thanks for contact us</h3>
-            <p>The Magic Island team will answer your query soon</p>
-            <button class="close-modal">x</button>
-          </div>
-        </div>
-      </div>
-    </section>
+			</div>
+			<div id="modal-contact" class="container-modal">
+				<div class="modal">
+					<h3>Hello!</h3>
+					<h3>Thanks for contact us</h3>
+					<p>The Magic Island team will answer your query soon</p>
+					<button class="close-modal">x</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- FOOTER -->
+	<!-- FOOTER -->
 
-    <footer>
-      <div class="social-links">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <div class="sun"></div>
-    </footer>
+	<footer>
+		<div class="social-links">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="sun"></div>
+	</footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2kSDEeHyWzcE74SZd2AmWoB_giQUMC5I&callback=initMap"
-    ></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/map.js"></script>
-  </body>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+	<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+	<script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2kSDEeHyWzcE74SZd2AmWoB_giQUMC5I&callback=initMap">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
+	<script src="assets/js/map.js"></script>
+	<script>
+		(function () {
+        emailjs.init("user_n27qJAh0791phWWb5Bl22");
+      })();
+	</script>
+</body>
+
 </html>
