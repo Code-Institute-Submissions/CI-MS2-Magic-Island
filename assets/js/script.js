@@ -1,4 +1,5 @@
 // Burguer Navigation bar
+// Burguer menu inspiration from: https://www.youtube.com/watch?v=gXkqy0b4M5g
 const navSlide = () => {
   const burguer = document.querySelector(".burguer");
   const nav = document.querySelector(".nav-links");

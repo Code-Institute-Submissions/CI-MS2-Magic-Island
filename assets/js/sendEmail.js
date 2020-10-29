@@ -25,6 +25,7 @@ function refresh() {
 }
 
 // Modal PopUp
+// Modal PopUp inspiration from: https://www.youtube.com/watch?v=fu-enUG2VEE
 
 function startModal() {
   const modal = document.getElementById("modal-contact");
