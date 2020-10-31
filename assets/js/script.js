@@ -2,18 +2,14 @@
 const skip = document.getElementById("skip-btn");
 const intro = document.querySelectorAll(".intro");
 
-for (let i = 0; i < intro.length; i++) {
-  skip.addEventListener("click", () => {
+skip.addEventListener("click", () => {
+  for (let i = 0; i < intro.length; i++) {
     intro[i].style.display = "none";
-    skip.style.display = "none";
-    introAnim.fromTo(
-      "nav, .hero-text",
-      { opacity: 0 },
-      { opacity: 1, duration: 1 },
-      "1"
-    );
-  });
-}
+  }
+  skip.style.display = "none";
+  introAnim.play("nav, .hero-text");
+});
+
 // Burguer Navigation bar
 // Burguer menu inspiration from: https://www.youtube.com/watch?v=gXkqy0b4M5g
 const navSlide = () => {
@@ -45,13 +41,12 @@ introAnim.to(".slider", { y: "-100%", duration: 0.8, delay: 2.2 });
 introAnim.to(".intro", { y: "-100%", duration: 0.8 }, "-=0.8");
 introAnim.to("#skip-btn", { y: "-150%", duration: 0.2 }, "-=0.8");
 // Animation only happens if the skip animation button is not clicked
-if (skip.click === false) {
-  introAnim.fromTo(
-    "nav, .hero-text",
-    { opacity: 0 },
-    { opacity: 1, duration: 1 }
-  );
-}
+
+introAnim.fromTo(
+  "nav, .hero-text",
+  { opacity: 0 },
+  { opacity: 1, duration: 1 }
+);
 
 // Chosen betwween beach, restaurant, activies
 
