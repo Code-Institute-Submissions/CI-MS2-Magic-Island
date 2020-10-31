@@ -1,7 +1,11 @@
-# [Magic Island](https://henriqueperoni.github.io/CI-MS2-Magic-Island/)
+# Magic Island
 
 #ADD MOCKUP
-The aim of this project is to show all the beauty a tourist will find if traveling to Mallorca. I kept the project simple providing information about beaches, places to eat, and things to do. But it can be upgraded easily, and also would feasible have partners and section to book rooms, cars, etc..
+The aim of this project is to show all the beauty a tourist will find if traveling to Mallorca.
+I kept the project simple providing information about beaches, places to eat, and things to do.
+But it can be upgraded easily, and also would feasible have partner section to book rooms, cars, get discount vouchers, etc..
+
+[Live demo on GitHub pages](https://henriqueperoni.github.io/CI-MS2-Magic-Island/)
 
 ## Table of Contents:
 
@@ -59,30 +63,40 @@ Customer Goals:
 
 ### 2. Scope
 
-The Magic Island website is contained within a single webpage. Users do not have to navigate away to use all the elements included in the website. Elements of the homepage are interactive including buttons that show all the things that are possible to do in Mallorca. The website also has a Google Maps API to provide direction.
-There is also some JavaScript and GSAP animations to make the experience more user friendly.
+The Magic Island website is contained within a single webpage. Users do not have to navigate away to use
+all the elements included in the website. Elements of the homepage are interactive including buttons that
+show all the things that are possible to do in Mallorca. The website also has a Google Maps API to
+provide direction. There is also some JavaScript and GSAP animations to make the experience more
+user friendly. The website has a contact form to clarify doubts and links to get in touch by social media.
 
 ### 3. Structure
 
-The main focus of the structure is to allow users to quickly understand what the website is about. With a navigation bar that represents a sunset, a hero image of a beach, and a small description on the main page is easy for a user to understand the site proposal.
-Users are invited to scroll down through a button and the next is nicely fade in in the screen with some general information and after some more specific information.
-To finish the website the user can send a message through a form in the case have any doubt.
+The main focus of the structure is to allow users to quickly understand what the website is about.
+With a navigation bar that has an icon that represents the sun, a hero image of a beach, and a small
+description on the main page is easy for a user to understand the site proposal. Scrolling down to
+the About section a text nicely fades in on the screen with some general information and after some
+more specific information. The website has a form that the users can send a message in the case
+have any doubt. To finish, scrolling down to the footer an animation starts representing a sunset,
+and the end of the website, in the footer also can be found the icons to social medias.
 
 ### 4. Skeleton
 
 # ADD WIREFRAME
 
 - Wireframes
-- Fixed navigation bar(Burguer menu for small screens)
-- Home, About, Things to Do, and Contact pages
-- Footer with social media icons
+- Fixed Burguer menu with navigation links for small screens.
+- Home, About, Things to Do, and Contact pages.
+- Footer with social media icons.
 
 ### 5. Surface
 
 **Colors**:
 
-Following the 60%/30%/10% rule, I decided to have two main colors which represent 60% of the website, as the website is about an island the two colors represent the sun(#db8d3f ) and the sea(#254c54 ). Also, 2 colors, representing 30%, and one color for the last 10%. To keep the colors in harmony with the images I picked the colors from some parts of the images. The #254c54 was taken from the ocean of the hero image, #db8d3f from the village walls in the about section, and #9e2f21 from a food image.
-
+Following the 60%/30%/10% rule, I decided to have two main colors which represent 60% of the website,
+as the website is about a summer destination the two colors represent the sun(#db8d3f ) and the sea(#254c54 ).
+Also, 2 colors, representing 30%, and one color for the last 10%. To keep the colors in harmony with
+the images I picked the colors from some parts of the images. The #254c54 was taken from the ocean of
+the hero image, #db8d3f from the village walls in the about section, and #9e2f21 from a food image.
 ![Palette](assets/images/palette.png)
 
 **Typography**:
@@ -100,6 +114,7 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 - Designed with HTML5, CSS3, JavaScript and GSAP.
 - Animation before load website showing what to expect.
+- Skip button for users who are coming back to the website and do not want to see the animations again.
 - About and Thing to Do sections nicely fade in with scroll.
 - Things to Do section with buttons showing different things to do, and also showing the locations on the Google Maps API.
 - Pop up Modal when submitting the form with thank you message.
@@ -202,11 +217,16 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 ## Project barriers and solutions
 
-- Had an issue with the images of the intro animation for medium and small screens. As the images were vertically positioned on large screens it was not fitting on small screens. I tried to use transform: rotate() property but it did not work for all images. I decided to edit the images in an editor and use the edit images with a media query for small and medium screens.
-- After create the burger navigation bar for medium and small screens I had a big challenge trying to figure out how to close it by clicking on any of the nav items. After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
--
-
-* Unsolved issue: I wanted to add a smooth behavior when the markers of the map are changed. I tried to find a solution in the Google Maps API documentation, but could not find something to fix it. The map works perfectly, it would be just a better user experience.
+- Had an issue with the images of the intro animation for medium and small screens. As the images were vertically positioned on large screens it was not fitting on small screens.
+  I tried to use transform: rotate() property but it did not work for all images. I decided to edit the images in an editor and use the edit images with a media query for small
+  and medium screens.
+- After create the burger navigation bar for medium and small screens I had a big challenge trying to figure out how to close it by clicking on any of the nav items.
+  After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
+- Make the skip button works properly. Made the animation image disappear was easy, but the animation that changes the opacity from 0 to 1 of the navigation bar and the
+  welcome message was the problem. I tried a conditional statement to the animation only happens if the skip button was not clicked,
+  what did not work. With the assistance of Code Institute tutor, and going through the GSAP documentation we found a way to does not execute
+  this animation and show the navbar and welcome message when the skip button is clicked.
+- Unsolved issue: I wanted to add a smooth behavior when the markers of the map are changed. I tried to find a solution in the Google Maps API documentation, but could not find something to fix it. The map works perfectly, it would be just a better user experience.
 
 ## Deployment
 
