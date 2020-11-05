@@ -32,6 +32,7 @@ function startModal() {
 
   modal.classList.add("show-modal");
 
+    // Modal is moved when targets are clicked
   modal.addEventListener("click", (e) => {
     if (e.target.id == "modal-contact" || e.target.className == "close-modal") {
       modal.classList.add("move-modal");

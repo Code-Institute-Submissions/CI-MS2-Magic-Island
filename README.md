@@ -1,6 +1,6 @@
 # Magic Island
 
-#ADD MOCKUP
+![Project Mock-up](assets/images/mock-up.png)
 The aim of this project is to show all the beauty a tourist will find if traveling to Mallorca.
 I kept the project simple providing information about beaches, places to eat, and things to do.
 But it can be upgraded easily, and also would feasible have partner section to book rooms, cars, get discount vouchers, etc..
@@ -150,6 +150,11 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 - [GitHub](https://github.com/) - Repository hosting service to host the deployed website and track previous versions of code.
 - [Git](https://git-scm.com/) - Version control tool to record changes and updates to my files.
 
+### 4. Other
+
+- [Autoprefixer](https://autoprefixer.github.io/) - Parses CSS and adds vendor prefixes.
+- [Google Mobile-Friendly](https://search.google.com/test/mobile-friendly) - Test Mobile-friendly check on site.
+
 ## Resources
 
 - [W3.CSS](https://www.w3schools.com/w3css/defaulT.asp) - General resource.
@@ -164,12 +169,18 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 - [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - Google Chrome Extesion Overflow Revealer.
 - Code Institute SLACK Community - General Resource
 
+## Code Validation
+
+- [W3C](https://validator.w3.org/) - HTML Markup Validation.
+- [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates all tags are opening and closing correctly.
+- [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation.
+- [JSHINT](https://jshint.com/) - JavaScript code warning & error check.
+
 ## Testing
 
 ### HTML
 
 - Ran HTML code through [HTML Validator](https://validator.w3.org/).
-
   - Two warnings for "The type attribute is unnecessary for JavaScript resources". Deleted both after check they really were not necessary.
   - Warning for about section lacks heading. As this section only contains an image and a short paragraph, a heading is not necessary.
   - Received an error because I had a-tag as a descendant of the button element. Styled the a-tag as a button and deleted and button element.
@@ -181,22 +192,21 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 ### JAVASCRIPT
 
-- Intro Animation
+- Passed all code through [JSHINT](https://jshint.com/).
+  - No errors found.
 
+- Intro Animation
   - Checked transitions(duration and delay) of images to the desired one.
 
 - Navigation Bar and Scroll to Top button
-
   - Clicked on all navbar links and scroll to top button to ensure the smooth scrolling was working properly.
   - Tested links on small screens for the hamburger menu, and if it closes when clicked on one of the menu items.
   - Checked if the scroll to top button only shows up after the first scroll.
 
 - About section
-
   - Checked if the text nicely fades into the screen when scroll reaches the center of the section as desired.
 
 - Things to Do section
-
   - Checked if the place option buttons nicely fade in one by one.
   - Checked if the container info and the map nicely fade in at the same time from the bottom and the right, respectively.
   - Clicked all the button places to check if the choices buttons fade in.
@@ -233,7 +243,7 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 This project has been deployed on GitHub Pages with the following process:
 
 1. All code was written on Gitpod, an online IDE.
-2. The code was then pushed to GitHub where it is stored in my Repository.
+2. The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/Henriqueperoni/CI-MS2-Magic-Island).
 3. Under the settings section of the GitHub repository, scroll down to the GitHub Pages section.
 4. Under 'Source' drop-down, the 'Master branch' was selected.
 5. Once selected, this publishes the project to GitHub Pages and displays the site URL.
@@ -246,9 +256,16 @@ This project has been deployed on GitHub Pages with the following process:
 ## Credits
 
 ### Media
-
 - Most of the images were from [Unsplash](https://unsplash.com/), but also some was taken from [Pinterest](https://www.pinterest.ie/)
 
 ### Code
+- Navigation bar adapted from [Dev Ed](https://www.youtube.com/watch?v=gXkqy0b4M5g).
+- Contact form modal pop up adapted from [Origamid](https://www.youtube.com/watch?v=fu-enUG2VEE).
+- Smooth scrolling (using Jquery) from [W3SCHOOLS](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp).
+- Arrow from Scroll to Top button from [Free Frontend](https://freefrontend.com/css-arrows/).
 
 ## Acknowledgments
+- Thanks to all Code Institute staff, but a special thanks to Igor Basuga who did not let me give up an idea I had given up.
+- Thanks to CI Slack Community for all the assistance.
+- Thanks to my mentor Excellence Ilesanmi for his time, patience, and excellent advices.
+- Thanks for all the web development community on Internet.
