@@ -82,9 +82,7 @@ can be found the icons to social medias.
 
 ### 4. Skeleton
 
-# ADD WIREFRAME
-
-- Wireframes
+- [Wireframes](assets/docs/wireframe.pdf)
 - Fixed Burguer menu with navigation links for small screens.
 - Home, About, Things to Do, and Contact pages.
 - Footer with social media icons.
