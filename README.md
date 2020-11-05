@@ -3,7 +3,7 @@
 ![Project Mock-up](assets/images/mock-up.png)
 The aim of this project is to show all the beauty a tourist will find if traveling to Mallorca.
 I kept the project simple providing information about beaches, places to eat, and things to do.
-But it can be upgraded easily, and also would feasible have partner section to book rooms, cars, get discount vouchers, etc..
+The project can be upgraded easily, and also would feasible have partner section to book rooms, cars, get discount vouchers, etc..
 
 [Live demo on GitHub pages](https://henriqueperoni.github.io/CI-MS2-Magic-Island/)
 
@@ -63,7 +63,7 @@ Customer Goals:
 
 ### 2. Scope
 
-The Magic Island website is contained within a single webpage. Users do not have to navigate away to use
+The Magic Island website is contained within a single webpage, users do not have to navigate away to use
 all the elements included in the website. Elements of the homepage are interactive including buttons that
 show all the things that are possible to do in Mallorca. The website also has a Google Maps API to
 provide direction. There is also some JavaScript and GSAP animations to make the experience more
@@ -74,10 +74,11 @@ user friendly. The website has a contact form to clarify doubts and links to get
 The main focus of the structure is to allow users to quickly understand what the website is about.
 With a navigation bar that has an icon that represents the sun, a hero image of a beach, and a small
 description on the main page is easy for a user to understand the site proposal. Scrolling down to
-the About section a text nicely fades in on the screen with some general information and after some
-more specific information. The website has a form that the users can send a message in the case
-have any doubt. To finish, scrolling down to the footer an animation starts representing a sunset,
-and the end of the website, in the footer also can be found the icons to social medias.
+the About section a text nicely fades in on the screen with some general information, then going to 
+the Things to Do section, interective buttons and a map fade in on the screen with more specific 
+informations. The website has a form that the users can send a message in the case they have any doubt. 
+To finish, scrolling down to the footer an animation starts representing a sunset, in the footer also 
+can be found the icons to social medias.
 
 ### 4. Skeleton
 
@@ -95,8 +96,8 @@ and the end of the website, in the footer also can be found the icons to social 
 Following the 60%/30%/10% rule, I decided to have two main colors which represent 60% of the website,
 as the website is about a summer destination the two colors represent the sun(#db8d3f ) and the sea(#254c54 ).
 Also, 2 colors, representing 30%, and one color for the last 10%. To keep the colors in harmony with
-the images I picked the colors from some parts of the images. The #254c54 was taken from the ocean of
-the hero image, #db8d3f from the village walls in the about section, and #9e2f21 from a food image.
+the images I picked the colors from some parts of the images. For example, the #254c54 was taken from the 
+ocean of the hero image, #db8d3f from the village walls in the about section, and #9e2f21 from a food image.
 ![Palette](assets/images/palette.png)
 
 **Typography**:
@@ -112,10 +113,10 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 ### Existing Features
 
-- Designed with HTML5, CSS3, JavaScript and GSAP.
+- Designed with HTML5, CSS3, JavaScript, jQuery and GSAP.
 - Animation before load website showing what to expect.
 - Skip button for users who are coming back to the website and do not want to see the animations again.
-- About and Thing to Do sections nicely fade in with scroll.
+- About and Things to Do sections nicely fade in with scroll.
 - Things to Do section with buttons showing different things to do, and also showing the locations on the Google Maps API.
 - Pop up Modal when submitting the form with thank you message.
 - Scroll to top button - this feature enables the user to quickly move back to the top of the page. The button only shows up after the first scroll.
@@ -150,11 +151,6 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 - [GitHub](https://github.com/) - Repository hosting service to host the deployed website and track previous versions of code.
 - [Git](https://git-scm.com/) - Version control tool to record changes and updates to my files.
 
-### 4. Other
-
-- [Autoprefixer](https://autoprefixer.github.io/) - Parses CSS and adds vendor prefixes.
-- [Google Mobile-Friendly](https://search.google.com/test/mobile-friendly) - Test Mobile-friendly check on site.
-
 ## Resources
 
 - [W3.CSS](https://www.w3schools.com/w3css/defaulT.asp) - General resource.
@@ -166,6 +162,8 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 - [Coolors](https://coolors.co/) - Find matching color palette for site.
 - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 - [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
+- [Autoprefixer](https://autoprefixer.github.io/) - Parses CSS and adds vendor prefixes.
+- [Google Mobile-Friendly](https://search.google.com/test/mobile-friendly) - Test Mobile-friendly check on site.
 - [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) - Google Chrome Extesion Overflow Revealer.
 - Code Institute SLACK Community - General Resource
 
@@ -178,55 +176,9 @@ As mentioned in the colors section, the images, and colors and were carefully ch
 
 ## Testing
 
-### HTML
-
-- Ran HTML code through [HTML Validator](https://validator.w3.org/).
-  - Two warnings for "The type attribute is unnecessary for JavaScript resources". Deleted both after check they really were not necessary.
-  - Warning for about section lacks heading. As this section only contains an image and a short paragraph, a heading is not necessary.
-  - Received an error because I had a-tag as a descendant of the button element. Styled the a-tag as a button and deleted and button element.
-
-### CSS
-
-- Ran HTML code through [HTML Validator](https://jigsaw.w3.org/css-validator/).
-  - No errors found.
-
-### JAVASCRIPT
-
-- Passed all code through [JSHINT](https://jshint.com/).
-  - No errors found.
-
-- Intro Animation
-  - Checked transitions(duration and delay) of images to the desired one.
-
-- Navigation Bar and Scroll to Top button
-  - Clicked on all navbar links and scroll to top button to ensure the smooth scrolling was working properly.
-  - Tested links on small screens for the hamburger menu, and if it closes when clicked on one of the menu items.
-  - Checked if the scroll to top button only shows up after the first scroll.
-
-- About section
-  - Checked if the text nicely fades into the screen when scroll reaches the center of the section as desired.
-
-- Things to Do section
-  - Checked if the place option buttons nicely fade in one by one.
-  - Checked if the container info and the map nicely fade in at the same time from the bottom and the right, respectively.
-  - Clicked all the button places to check if the choices buttons fade in.
-  - Clicked all the choices buttons to check if the info container is changed to the desired one. Also if the Google Maps API goes to the right location.
-  - Clicked all the markers on the Google Maps API to check if the info windows pop up. Also, clicked outside of the info windows to check if it closes.
-
-- Contact section
-  - Checked if modal pops up after the form been submitted.
-  - Checked if the form resets after been submitted.
-  - Checked if the message has been sent to the email desired.
-
-### RESPONSINESS
-
-- Check website at [Responsitor](https://www.responsinator.com/) - Shows the website in different devices.
-- DevTools - Tested across a range of different devices. With different sizes.
-- Viewed website in various browsers: Google Chrome, Firefox, Opera, Microsoft Edge.
-- Wiewed of different physical devices: Iphone 8(375px), Iphone 11(414px), Xiaomi Redmi 9(393px), medium laptop(1280px), large desktop screen(1920px).
+Testing documentation can be found [here](assets/docs/testing.md).
 
 ## Project barriers and solutions
-
 - Had an issue with the images of the intro animation for medium and small screens. As the images were vertically positioned on large screens it was not fitting on small screens.
   I tried to use transform: rotate() property but it did not work for all images. I decided to edit the images in an editor and use the edit images with a media query for small
   and medium screens.
@@ -234,8 +186,8 @@ As mentioned in the colors section, the images, and colors and were carefully ch
   After sharing this issue in the Code Institute Slack Comunity I was advised to use a for loop, and then I figure out a way to apply it.
 - Make the skip button works properly. Made the animation image disappear was easy, but the animation that changes the opacity from 0 to 1 of the navigation bar and the
   welcome message was the problem. I tried a conditional statement to the animation only happens if the skip button was not clicked,
-  what did not work. With the assistance of Code Institute tutor, and going through the GSAP documentation we found a way to does not execute
-  this animation and show the navbar and welcome message when the skip button is clicked.
+  what did not work. With the assistance of a Code Institute tutor, and going through the GSAP documentation we found a way to does not execute
+  this animation and show the navbar and the welcome message when the skip button is clicked.
 - Unsolved issue: I wanted to add a smooth behavior when the markers of the map are changed. I tried to find a solution in the Google Maps API documentation, but could not find something to fix it. The map works perfectly, it would be just a better user experience.
 
 ## Deployment
@@ -257,13 +209,11 @@ This project has been deployed on GitHub Pages with the following process:
 
 ### Media
 - Most of the images were from [Unsplash](https://unsplash.com/), but also some was taken from [Pinterest](https://www.pinterest.ie/)
-
 ### Code
 - Navigation bar adapted from [Dev Ed](https://www.youtube.com/watch?v=gXkqy0b4M5g).
 - Contact form modal pop up adapted from [Origamid](https://www.youtube.com/watch?v=fu-enUG2VEE).
 - Smooth scrolling (using Jquery) from [W3SCHOOLS](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp).
 - Arrow from Scroll to Top button from [Free Frontend](https://freefrontend.com/css-arrows/).
-
 ## Acknowledgments
 - Thanks to all Code Institute staff, but a special thanks to Igor Basuga who did not let me give up an idea I had given up.
 - Thanks to CI Slack Community for all the assistance.
