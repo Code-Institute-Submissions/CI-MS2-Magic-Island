@@ -43,6 +43,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 10vh;
+  min-height: 50px;
   max-height: 70px;
   color: #db8d3f;
   background: #254c54;
@@ -1079,5 +1080,36 @@ footer {
 
   .intro h2 {
     font-size: 250%;
+  }
+
+  .hero-text {
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+  }
+
+  .hero-text h1 {
+    min-width: 275px;
+  }
+}
+
+@media screen and (max-height: 415px) {
+  .intro img {
+    width: 470px;
+    height: 270px;
+  }
+
+  .intro h2 {
+    font-size: 300%;
+  }
+
+  .hero-text {
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
+  }
+
+  .container-contact {
+    height: auto;
   }
 }
